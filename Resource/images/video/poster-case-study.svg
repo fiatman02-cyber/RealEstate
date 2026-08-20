@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Case Study">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1730"/><stop offset="1" stop-color="#1A3560"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060B18" stop-opacity="0"/>
+      <stop offset="1" stop-color="#060B18" stop-opacity=".85"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#FBFAF7" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1320" cy="180" r="230" fill="#C9A227" opacity=".14"/>
+  <circle cx="240" cy="760" r="300" fill="#35C5D8" opacity=".10"/>
+  <g fill="#060B18" opacity=".55"><rect x="0" y="631" width="89" height="269" rx="3"/><rect x="99" y="580" width="100" height="320" rx="3"/><rect x="209" y="555" width="104" height="345" rx="3"/><rect x="323" y="668" width="65" height="232" rx="3"/><rect x="398" y="498" width="78" height="402" rx="3"/><rect x="486" y="750" width="80" height="150" rx="3"/><rect x="576" y="510" width="46" height="390" rx="3"/><rect x="632" y="608" width="98" height="292" rx="3"/><rect x="740" y="667" width="46" height="233" rx="3"/><rect x="796" y="641" width="86" height="259" rx="3"/><rect x="892" y="699" width="65" height="201" rx="3"/><rect x="967" y="569" width="50" height="331" rx="3"/><rect x="1027" y="681" width="115" height="219" rx="3"/><rect x="1152" y="579" width="69" height="321" rx="3"/><rect x="1231" y="640" width="95" height="260" rx="3"/><rect x="1336" y="755" width="49" height="145" rx="3"/><rect x="1395" y="628" width="48" height="272" rx="3"/><rect x="1453" y="554" width="82" height="346" rx="3"/><rect x="1545" y="506" width="75" height="394" rx="3"/></g>
+  <rect width="1600" height="900" fill="url(#fade)"/>
+  <rect x="96" y="700" width="72" height="6" rx="3" fill="#C9A227"/>
+  <text x="96" y="782" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#FBFAF7">Case Study</text>
+  <text x="96" y="826" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" fill="#A9B3C7">FiatKopong &#183; Real Estate Intelligence</text>
+</svg>

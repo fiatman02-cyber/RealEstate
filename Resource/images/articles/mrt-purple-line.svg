@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="MRT Line Effect">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1428"/><stop offset="1" stop-color="#1B3560"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060B18" stop-opacity="0"/>
+      <stop offset="1" stop-color="#060B18" stop-opacity=".85"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#FBFAF7" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1320" cy="180" r="230" fill="#C9A227" opacity=".14"/>
+  <circle cx="240" cy="760" r="300" fill="#35C5D8" opacity=".10"/>
+  <g fill="#060B18" opacity=".55"><rect x="0" y="798" width="62" height="102" rx="3"/><rect x="72" y="513" width="114" height="387" rx="3"/><rect x="196" y="690" width="116" height="210" rx="3"/><rect x="322" y="790" width="65" height="110" rx="3"/><rect x="397" y="543" width="107" height="357" rx="3"/><rect x="514" y="754" width="58" height="146" rx="3"/><rect x="582" y="786" width="61" height="114" rx="3"/><rect x="653" y="652" width="72" height="248" rx="3"/><rect x="735" y="574" width="68" height="326" rx="3"/><rect x="813" y="780" width="59" height="120" rx="3"/><rect x="882" y="522" width="99" height="378" rx="3"/><rect x="991" y="739" width="59" height="161" rx="3"/><rect x="1060" y="808" width="62" height="92" rx="3"/><rect x="1132" y="751" width="68" height="149" rx="3"/><rect x="1210" y="671" width="66" height="229" rx="3"/><rect x="1286" y="488" width="70" height="412" rx="3"/><rect x="1366" y="806" width="47" height="94" rx="3"/><rect x="1423" y="674" width="60" height="226" rx="3"/><rect x="1493" y="754" width="80" height="146" rx="3"/><rect x="1583" y="795" width="105" height="105" rx="3"/></g>
+  <rect width="1600" height="900" fill="url(#fade)"/>
+  <rect x="96" y="700" width="72" height="6" rx="3" fill="#C9A227"/>
+  <text x="96" y="782" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#FBFAF7">MRT Line Effect</text>
+  <text x="96" y="826" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" fill="#A9B3C7">FiatKopong &#183; Real Estate Intelligence</text>
+</svg>

@@ -1,0 +1,62 @@
+<a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+
+<!-- ============================= HEADER =============================
+     แก้เมนูที่ไฟล์นี้ที่เดียว แล้วรัน  bash _partials/build.sh  เพื่ออัปเดตทุกหน้า
+     (index.html และ about-me.html เขียนมือ — แก้ในไฟล์นั้นตรงๆ)
+     ================================================================== -->
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="FiatKopong หน้าแรก">
+      <img src="Resource/images/brand/logo.svg" alt="FiatKopong" width="420" height="96">
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="เมนูหลัก">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html" %%CUR_home%%>หน้าแรก</a></li>
+
+        <li class="has-sub">
+          <a class="nav__link" href="about-me.html" aria-expanded="false" %%CUR_about%%>
+            เกี่ยวกับ
+            <svg class="nav__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="sub">
+            <a href="about-me.html">เกี่ยวกับผม<span>เส้นทางจากคนวิเคราะห์ตัวเลข สู่ตลาดอสังหาฯ</span></a>
+            <a href="about-us.html">เกี่ยวกับเรา &amp; พาร์ทเนอร์<span>พันธกิจ ทีมงาน และเครือข่ายที่ทำงานร่วมกัน</span></a>
+            <a href="testimonials.html">เสียงจากผู้ใช้จริง<span>รีวิวผู้เรียนคอร์สและลูกค้าที่ปรึกษา</span></a>
+          </div>
+        </li>
+
+        <li class="has-sub">
+          <a class="nav__link" href="products.html" aria-expanded="false" %%CUR_products%%>
+            บริการ
+            <svg class="nav__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="sub">
+            <a href="courses.html">คอร์สเรียนอสังหาริมทรัพย์<span>อ่านตลาดเองได้ ไม่ต้องเชื่อใครอย่างเดียว</span></a>
+            <a href="reports.html">บทวิเคราะห์ &amp; สถิติตลาด<span>คลังรายงานรายเดือน ระบุแหล่งข้อมูลทุกตัวเลข</span></a>
+            <a href="dashboards.html">Dashboard เฉพาะลูกค้า<span>ให้ระบบติดตามพอร์ตแทนการนั่งหาข่าวเอง</span></a>
+            <a href="consult.html">ที่ปรึกษาธุรกิจอสังหาฯ<span>วางแผนโปรเจกต์ด้วยข้อมูล ไม่ใช่ความรู้สึก</span></a>
+          </div>
+        </li>
+
+        <li><a class="nav__link" href="location-intelligence.html" %%CUR_li%%>Location IQ</a></li>
+        <li><a class="nav__link" href="articles.html" %%CUR_articles%%>บทความ</a></li>
+        <li><a class="nav__link" href="faq.html" %%CUR_faq%%>คำถามที่พบบ่อย</a></li>
+        <li><a class="nav__link" href="contact.html" %%CUR_contact%%>ติดต่อ</a></li>
+      </ul>
+
+      <div class="nav__cta">
+        <a class="btn btn--gold btn--block" href="consult.html">จองคำปรึกษาฟรี</a>
+        <a class="btn btn--outline btn--block" href="reports.html">ดาวน์โหลดรายงานฟรี</a>
+      </div>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--gold hide-sm" href="consult.html">จองคำปรึกษาฟรี</a>
+      <button class="icon-btn burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="เปิดเมนู">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="backdrop" hidden aria-hidden="true"></div>

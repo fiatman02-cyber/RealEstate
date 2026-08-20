@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="LTV &amp; First Home">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C1830"/><stop offset="1" stop-color="#173059"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060B18" stop-opacity="0"/>
+      <stop offset="1" stop-color="#060B18" stop-opacity=".85"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#FBFAF7" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1320" cy="180" r="230" fill="#C9A227" opacity=".14"/>
+  <circle cx="240" cy="760" r="300" fill="#35C5D8" opacity=".10"/>
+  <g fill="#060B18" opacity=".55"><rect x="0" y="493" width="50" height="407" rx="3"/><rect x="60" y="684" width="63" height="216" rx="3"/><rect x="133" y="610" width="106" height="290" rx="3"/><rect x="249" y="503" width="74" height="397" rx="3"/><rect x="333" y="650" width="67" height="250" rx="3"/><rect x="410" y="696" width="86" height="204" rx="3"/><rect x="506" y="505" width="73" height="395" rx="3"/><rect x="589" y="663" width="67" height="237" rx="3"/><rect x="666" y="573" width="48" height="327" rx="3"/><rect x="724" y="637" width="46" height="263" rx="3"/><rect x="780" y="528" width="52" height="372" rx="3"/><rect x="842" y="682" width="101" height="218" rx="3"/><rect x="953" y="577" width="58" height="323" rx="3"/><rect x="1021" y="581" width="117" height="319" rx="3"/><rect x="1148" y="747" width="82" height="153" rx="3"/><rect x="1240" y="789" width="47" height="111" rx="3"/><rect x="1297" y="599" width="87" height="301" rx="3"/><rect x="1394" y="647" width="83" height="253" rx="3"/><rect x="1487" y="533" width="64" height="367" rx="3"/><rect x="1561" y="558" width="116" height="342" rx="3"/></g>
+  <rect width="1600" height="900" fill="url(#fade)"/>
+  <rect x="96" y="700" width="72" height="6" rx="3" fill="#C9A227"/>
+  <text x="96" y="782" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#FBFAF7">LTV &amp; First Home</text>
+  <text x="96" y="826" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" fill="#A9B3C7">FiatKopong &#183; Real Estate Intelligence</text>
+</svg>

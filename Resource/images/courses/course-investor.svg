@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Investor Playbook">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1730"/><stop offset="1" stop-color="#1A3560"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060B18" stop-opacity="0"/>
+      <stop offset="1" stop-color="#060B18" stop-opacity=".85"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#FBFAF7" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1320" cy="180" r="230" fill="#C9A227" opacity=".14"/>
+  <circle cx="240" cy="760" r="300" fill="#35C5D8" opacity=".10"/>
+  <g fill="#060B18" opacity=".55"><rect x="0" y="803" width="114" height="97" rx="3"/><rect x="124" y="649" width="74" height="251" rx="3"/><rect x="208" y="785" width="48" height="115" rx="3"/><rect x="266" y="539" width="118" height="361" rx="3"/><rect x="394" y="554" width="115" height="346" rx="3"/><rect x="519" y="781" width="69" height="119" rx="3"/><rect x="598" y="515" width="102" height="385" rx="3"/><rect x="710" y="706" width="94" height="194" rx="3"/><rect x="814" y="674" width="81" height="226" rx="3"/><rect x="905" y="787" width="75" height="113" rx="3"/><rect x="990" y="481" width="84" height="419" rx="3"/><rect x="1084" y="582" width="93" height="318" rx="3"/><rect x="1187" y="558" width="63" height="342" rx="3"/><rect x="1260" y="642" width="90" height="258" rx="3"/><rect x="1360" y="740" width="48" height="160" rx="3"/><rect x="1418" y="761" width="53" height="139" rx="3"/><rect x="1481" y="752" width="62" height="148" rx="3"/><rect x="1553" y="664" width="72" height="236" rx="3"/></g>
+  <rect width="1600" height="900" fill="url(#fade)"/>
+  <rect x="96" y="700" width="72" height="6" rx="3" fill="#C9A227"/>
+  <text x="96" y="782" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#FBFAF7">Investor Playbook</text>
+  <text x="96" y="826" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" fill="#A9B3C7">FiatKopong &#183; Real Estate Intelligence</text>
+</svg>

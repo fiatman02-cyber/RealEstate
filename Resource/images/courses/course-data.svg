@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Data for Real Estate">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1B33"/><stop offset="1" stop-color="#17305A"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060B18" stop-opacity="0"/>
+      <stop offset="1" stop-color="#060B18" stop-opacity=".85"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#FBFAF7" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1320" cy="180" r="230" fill="#C9A227" opacity=".14"/>
+  <circle cx="240" cy="760" r="300" fill="#35C5D8" opacity=".10"/>
+  <g fill="#060B18" opacity=".55"><rect x="0" y="499" width="103" height="401" rx="3"/><rect x="113" y="491" width="97" height="409" rx="3"/><rect x="220" y="705" width="111" height="195" rx="3"/><rect x="341" y="662" width="61" height="238" rx="3"/><rect x="412" y="661" width="75" height="239" rx="3"/><rect x="497" y="644" width="90" height="256" rx="3"/><rect x="597" y="486" width="108" height="414" rx="3"/><rect x="715" y="717" width="88" height="183" rx="3"/><rect x="813" y="674" width="61" height="226" rx="3"/><rect x="884" y="723" width="69" height="177" rx="3"/><rect x="963" y="739" width="104" height="161" rx="3"/><rect x="1077" y="604" width="68" height="296" rx="3"/><rect x="1155" y="656" width="59" height="244" rx="3"/><rect x="1224" y="552" width="72" height="348" rx="3"/><rect x="1306" y="485" width="64" height="415" rx="3"/><rect x="1380" y="481" width="110" height="419" rx="3"/><rect x="1500" y="545" width="102" height="355" rx="3"/></g>
+  <rect width="1600" height="900" fill="url(#fade)"/>
+  <rect x="96" y="700" width="72" height="6" rx="3" fill="#C9A227"/>
+  <text x="96" y="782" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#FBFAF7">Data for Real Estate</text>
+  <text x="96" y="826" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" fill="#A9B3C7">FiatKopong &#183; Real Estate Intelligence</text>
+</svg>

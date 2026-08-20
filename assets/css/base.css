@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* ==========================================================================
+   FiatKopong — Real Estate Intelligence
+   base.css  =  รากฐานของเว็บ (สี ฟอนต์ ระยะ ปุ่ม)
+   --------------------------------------------------------------------------
+   สารบัญ
+   01. Design Tokens   << อยากเปลี่ยนสีทั้งเว็บ แก้ที่นี่ที่เดียวจบ
+   02. Reset & Base
+   03. Accessibility (WCAG 2.1 AA)
+   04. Layout & Container
+   05. Typography
+   06. Buttons & Links
+   ========================================================================== */
+
+/* ==========================================================================
+   01. DESIGN TOKENS
+   ========================================================================== */
+:root{
+  /* --- สีแบรนด์: กรมท่า (Navy) --- */
+  --navy-950:#060B18;   /* เข้มสุด บรรยากาศโรงหนัง */
+  --navy-900:#0A1428;   /* พื้นหลังหลัก */
+  --navy-800:#0F1D38;   /* การ์ด / แผง */
+  --navy-700:#16294B;   /* พื้นยกระดับ */
+  --navy-600:#1E3A66;
+  --navy-500:#2A4E85;
+
+  /* --- สีแบรนด์: ทอง (Gold) --- */
+  --gold-100:#F7EFD6;
+  --gold-300:#E8CE7A;
+  --gold-400:#D9B84C;
+  --gold-500:#C9A227;   /* ทองหลัก — ใช้บนพื้นเข้มเท่านั้น */
+  --gold-700:#8A6B0F;
+  --gold-ink:#6E4F06;   /* ทองเข้ม สำหรับตัวหนังสือบนพื้นสว่าง (ผ่าน WCAG AA) */
+
+  /* --- กลาง / ขาว --- */
+  --cream:#FBFAF7;
+  --paper:#FFFFFF;
+  --sand-100:#F4F1EA;
+  --sand-200:#E6E1D6;
+
+  /* --- ตัวหนังสือ --- */
+  --ink-900:#101828;      /* ข้อความหลัก บนพื้นสว่าง */
+  --ink-700:#354056;
+  --ink-500:#525C6E;      /* ข้อความรอง บนพื้นสว่าง (AA) */
+  --on-dark:#EEF1F7;      /* ข้อความหลัก บนพื้นเข้ม */
+  --on-dark-muted:#B4BDCE;/* ข้อความรอง บนพื้นเข้ม (AA) */
+
+  /* --- สีชุดข้อมูล (ใช้กับคะแนน/กราฟ) --- */
+  --data-cyan:#35C5D8;
+  --data-green:#3FBF8F;
+  --data-amber:#E8A33D;
+  --data-red:#E4676C;
+  --data-violet:#9A8CF5;
+
+  /* --- Semantic --- */
+  --bg:var(--navy-950);
+  --surface:var(--navy-900);
+  --surface-2:var(--navy-800);
+  --line:rgba(251,250,247,.12);
+  --line-strong:rgba(251,250,247,.24);
+  --focus:var(--gold-300);
+
+  /* --- ฟอนต์ --- */
+  --font-display:"Noto Serif Thai","Playfair Display",Georgia,"Times New Roman",serif;
+  --font-body:"IBM Plex Sans Thai","Inter","Segoe UI",Tahoma,-apple-system,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+
+  /* --- ขนาดตัวอักษรแบบ fluid (เล็กบนมือถือ ใหญ่บนจอใหญ่ อัตโนมัติ) ---
+     หมายเหตุ: ภาษาไทยไม่มีเว้นวรรคระหว่างคำ เบราว์เซอร์จึงตัดบรรทัดกลางคำได้
+     จึงตั้งขนาดหัวเรื่องไว้ไม่ใหญ่เกินความกว้างคอลัมน์ และใส่ <br> กำหนดจุดตัดเอง */
+  --fs-hero:clamp(1.95rem,4.6vw,3.45rem);
+  --fs-h1:clamp(1.85rem,3.9vw,3rem);
+  --fs-h2:clamp(1.55rem,2.9vw,2.25rem);
+  --fs-h3:clamp(1.25rem,2vw,1.65rem);
+  --fs-h4:clamp(1.08rem,1.4vw,1.25rem);
+  --fs-lead:clamp(1.05rem,1.5vw,1.28rem);
+  --fs-body:1.0625rem;
+  --fs-sm:.9375rem;
+  --fs-xs:.8125rem;
+
+  /* --- ระยะ --- */
+  --sp-1:.25rem; --sp-2:.5rem;  --sp-3:.75rem; --sp-4:1rem;
+  --sp-5:1.5rem; --sp-6:2rem;   --sp-7:3rem;   --sp-8:4rem;
+  --section-y:clamp(3.5rem,7vw,7rem);
+  --container:1240px;
+  --container-narrow:820px;
+
+  /* --- มุมโค้ง / เงา --- */
+  --r-sm:8px; --r-md:14px; --r-lg:22px; --r-xl:32px; --r-pill:999px;
+  --shadow-sm:0 1px 2px rgba(6,11,24,.28);
+  --shadow-md:0 10px 24px -8px rgba(6,11,24,.55);
+  --shadow-lg:0 28px 60px -18px rgba(6,11,24,.7);
+  --shadow-gold:0 12px 40px -12px rgba(201,162,39,.42);
+
+  /* --- Motion --- */
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --t-fast:.18s; --t:.32s; --t-slow:.6s;
+
+  --header-h:74px;
+}
+
+/* ==========================================================================
+   02. RESET & BASE
+   ========================================================================== */
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0}
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+  scroll-padding-top:calc(var(--header-h) + 16px);
+}
+body{
+  font-family:var(--font-body);
+  font-size:var(--fs-body);
+  line-height:1.7;
+  color:var(--on-dark);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img,svg,video,canvas,iframe{display:block;max-width:100%}
+img,video{height:auto}
+input,button,textarea,select{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0}
+ul,ol{padding:0}
+li{list-style:none}
+a{color:var(--gold-300);text-decoration:none;text-underline-offset:.22em}
+a:hover{text-decoration:underline}
+table{border-collapse:collapse;width:100%}
+hr{border:0;border-top:1px solid var(--line)}
+::selection{background:var(--gold-500);color:var(--navy-950)}
+body.is-locked{overflow:hidden}
+
+/* โหมด "กระดาษ" — ครอบ section ไหนก็ได้ ตัวแปรจะสลับให้อ่านง่ายบนพื้นสว่างเอง */
+.on-light{
+  background:var(--cream);
+  color:var(--ink-900);
+  --on-dark:var(--ink-900);
+  --on-dark-muted:var(--ink-500);
+  --line:rgba(16,24,40,.12);
+  --line-strong:rgba(16,24,40,.26);
+  --surface:var(--paper);
+  --surface-2:var(--sand-100);
+  --focus:var(--navy-600);
+}
+.on-light a{color:var(--gold-ink)}
+.on-sand{background:var(--sand-100)}
+
+/* ==========================================================================
+   03. ACCESSIBILITY (WCAG 2.1 AA)
+   ========================================================================== */
+.skip-link{
+  position:absolute;left:50%;top:-100px;transform:translateX(-50%);z-index:9999;
+  padding:.85rem 1.4rem;border-radius:0 0 var(--r-md) var(--r-md);
+  background:var(--gold-500);color:var(--navy-950);font-weight:700;
+  transition:top var(--t-fast) var(--ease);
+}
+.skip-link:focus{top:0;text-decoration:none}
+
+/* ซ่อนจากสายตา แต่โปรแกรมอ่านหน้าจอยังอ่านได้ */
+.sr-only{
+  position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+.sr-only-focusable:focus{
+  position:static!important;width:auto;height:auto;margin:0;clip:auto;overflow:visible;
+}
+
+/* วงแหวนโฟกัสที่เห็นชัดทุกจุด — จำเป็นสำหรับคนใช้คีย์บอร์ด */
+:where(a,button,input,textarea,select,summary,[tabindex]):focus-visible{
+  outline:3px solid var(--focus);
+  outline-offset:3px;
+  border-radius:var(--r-sm);
+}
+/* เป้าแตะบนมือถืออย่างน้อย 44px ตามเกณฑ์ WCAG 2.5.5 */
+.btn,.nav__link,.icon-btn,.chip{min-height:44px}
+/* บนอุปกรณ์สัมผัส ขยายปุ่มขนาดเล็กให้ครบ 44px ด้วย (นิ้วไม่แม่นเท่าเมาส์) */
+@media (pointer:coarse){
+  .btn--sm,.like-btn,.slot{min-height:44px}
+}
+
+/* ==========================================================================
+   04. LAYOUT & CONTAINER
+   ========================================================================== */
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem)}
+.container--narrow{max-width:var(--container-narrow)}
+.container--wide{max-width:1480px}
+.section{padding-block:var(--section-y);position:relative}
+.section--tight{padding-block:clamp(2.25rem,4vw,3.75rem)}
+.grid{display:grid;gap:clamp(1rem,2.4vw,2rem)}
+.grid--2{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.grid--3{grid-template-columns:repeat(auto-fit,minmax(min(100%,288px),1fr))}
+.grid--4{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.split{display:grid;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+@media(min-width:900px){
+  .split{grid-template-columns:1.05fr .95fr}
+  .split--media-first{grid-template-columns:.95fr 1.05fr}
+}
+.stack>*+*{margin-top:var(--sp-4)}
+.stack-lg>*+*{margin-top:var(--sp-6)}
+.cluster{display:flex;flex-wrap:wrap;gap:var(--sp-3);align-items:center}
+.rule-gold{height:1px;background:linear-gradient(90deg,transparent,var(--gold-500),transparent);opacity:.45}
+
+/* ==========================================================================
+   05. TYPOGRAPHY
+   ========================================================================== */
+h1,h2,h3,h4,.display{
+  font-family:var(--font-display);font-weight:700;line-height:1.2;
+  letter-spacing:-.01em;text-wrap:balance;
+}
+h1{font-size:var(--fs-h1)}
+h2{font-size:var(--fs-h2)}
+h3{font-size:var(--fs-h3)}
+h4{font-size:var(--fs-h4)}
+p{text-wrap:pretty;max-width:72ch}
+.lead{font-size:var(--fs-lead);line-height:1.65;color:var(--on-dark-muted)}
+.muted{color:var(--on-dark-muted)}
+.small{font-size:var(--fs-sm)}
+.xs{font-size:var(--fs-xs)}
+.gold{color:var(--gold-300)}
+.on-light .gold{color:var(--gold-ink)}
+.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-size:var(--fs-xs);font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold-300);
+}
+.on-light .eyebrow{color:var(--gold-ink)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor;opacity:.85}
+.text-gradient{
+  background:linear-gradient(100deg,var(--gold-300),var(--gold-500) 45%,var(--gold-300));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+
+/* บล็อกเนื้อหายาว (บทความ / About) */
+.prose>p{margin-block:var(--sp-4)}
+.prose h2{margin-top:var(--sp-7);margin-bottom:var(--sp-3)}
+.prose h3{margin-top:var(--sp-6);margin-bottom:var(--sp-2)}
+.prose ul{margin-block:var(--sp-4);display:grid;gap:.6rem}
+.prose ul li{position:relative;padding-left:1.6rem;max-width:72ch}
+.prose ul li::before{
+  content:"";position:absolute;left:.25rem;top:.75em;width:7px;height:7px;
+  background:var(--gold-500);transform:rotate(45deg);
+}
+.prose blockquote{
+  margin-block:var(--sp-6);padding:var(--sp-5) var(--sp-5) var(--sp-5) var(--sp-6);
+  border-left:3px solid var(--gold-500);background:var(--surface-2);
+  border-radius:0 var(--r-md) var(--r-md) 0;
+  font-family:var(--font-display);font-size:var(--fs-h4);line-height:1.55;
+}
+.prose blockquote p{max-width:none}
+.prose strong{color:var(--on-dark);font-weight:650}
+
+/* ==========================================================================
+   06. BUTTONS & LINKS
+   ========================================================================== */
+.btn{
+  --btn-bg:var(--gold-500); --btn-fg:var(--navy-950); --btn-bd:var(--gold-500);
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  padding:.8rem 1.6rem;border-radius:var(--r-pill);
+  background:var(--btn-bg);color:var(--btn-fg);border:1.5px solid var(--btn-bd);
+  font-weight:650;font-size:var(--fs-sm);text-align:center;
+  transition:transform var(--t-fast) var(--ease),box-shadow var(--t) var(--ease),
+             background-color var(--t-fast),color var(--t-fast),border-color var(--t-fast);
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px);box-shadow:var(--shadow-gold)}
+.btn:active{transform:translateY(0)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn--gold{--btn-bg:linear-gradient(135deg,var(--gold-300),var(--gold-500));--btn-bd:var(--gold-400)}
+.btn--outline{--btn-bg:transparent;--btn-fg:var(--on-dark);--btn-bd:var(--line-strong)}
+.btn--outline:hover{--btn-bd:var(--gold-400);--btn-fg:var(--gold-300);box-shadow:none}
+.on-light .btn--outline:hover{--btn-fg:var(--gold-ink);--btn-bd:var(--gold-700)}
+.btn--navy{--btn-bg:var(--navy-900);--btn-fg:var(--cream);--btn-bd:var(--navy-900)}
+.btn--navy:hover{box-shadow:var(--shadow-md)}
+.btn--ghost{--btn-bg:rgba(251,250,247,.07);--btn-fg:var(--on-dark);--btn-bd:transparent}
+.on-light .btn--ghost{--btn-bg:rgba(16,24,40,.06)}
+.btn--lg{padding:1.02rem 2.1rem;font-size:1.0625rem}
+.btn--sm{padding:.5rem 1.1rem;font-size:var(--fs-xs);min-height:38px}
+.btn--block{width:100%}
+.btn[aria-disabled="true"],.btn:disabled{opacity:.45;pointer-events:none}
+
+.icon-btn{
+  display:inline-grid;place-items:center;width:44px;height:44px;border-radius:var(--r-pill);
+  border:1px solid var(--line-strong);color:var(--on-dark);
+  transition:background-color var(--t-fast),border-color var(--t-fast),color var(--t-fast),transform var(--t-fast);
+}
+.icon-btn:hover{background:rgba(201,162,39,.15);border-color:var(--gold-400);color:var(--gold-300);transform:translateY(-2px)}
+.icon-btn svg{width:20px;height:20px}
+
+.link-arrow{display:inline-flex;align-items:center;gap:.45rem;font-weight:600;font-size:var(--fs-sm)}
+.link-arrow svg{width:16px;height:16px;transition:transform var(--t) var(--ease)}
+.link-arrow:hover{text-decoration:none}
+.link-arrow:hover svg{transform:translateX(5px)}

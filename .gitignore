@@ -1,0 +1,14 @@
+# ระบบปฏิบัติการ
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# เอดิเตอร์
+.vscode/
+.idea/
+*.swp
+
+# ไฟล์ชั่วคราว
+*.log
+*.tmp
+node_modules/

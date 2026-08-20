@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Interest Rate &amp; Housing">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1428"/><stop offset="1" stop-color="#1E3A66"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060B18" stop-opacity="0"/>
+      <stop offset="1" stop-color="#060B18" stop-opacity=".85"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#FBFAF7" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1320" cy="180" r="230" fill="#C9A227" opacity=".14"/>
+  <circle cx="240" cy="760" r="300" fill="#35C5D8" opacity=".10"/>
+  <g fill="#060B18" opacity=".55"><rect x="0" y="504" width="113" height="396" rx="3"/><rect x="123" y="610" width="60" height="290" rx="3"/><rect x="193" y="807" width="113" height="93" rx="3"/><rect x="316" y="545" width="71" height="355" rx="3"/><rect x="397" y="498" width="100" height="402" rx="3"/><rect x="507" y="489" width="59" height="411" rx="3"/><rect x="576" y="756" width="114" height="144" rx="3"/><rect x="700" y="625" width="62" height="275" rx="3"/><rect x="772" y="524" width="99" height="376" rx="3"/><rect x="881" y="698" width="81" height="202" rx="3"/><rect x="972" y="707" width="69" height="193" rx="3"/><rect x="1051" y="613" width="75" height="287" rx="3"/><rect x="1136" y="604" width="98" height="296" rx="3"/><rect x="1244" y="514" width="60" height="386" rx="3"/><rect x="1314" y="763" width="108" height="137" rx="3"/><rect x="1432" y="517" width="116" height="383" rx="3"/><rect x="1558" y="747" width="84" height="153" rx="3"/></g>
+  <rect width="1600" height="900" fill="url(#fade)"/>
+  <rect x="96" y="700" width="72" height="6" rx="3" fill="#C9A227"/>
+  <text x="96" y="782" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#FBFAF7">Interest Rate &amp; Housing</text>
+  <text x="96" y="826" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" fill="#A9B3C7">FiatKopong &#183; Real Estate Intelligence</text>
+</svg>

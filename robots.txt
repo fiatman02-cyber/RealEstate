@@ -1,0 +1,7 @@
+# FiatKopong — robots.txt
+# เปลี่ยนโดเมนใน Sitemap ให้ตรงกับของจริงเมื่อขึ้นเว็บแล้ว
+User-agent: *
+Allow: /
+Disallow: /_partials/
+
+Sitemap: https://fiatkopong.com/sitemap.xml

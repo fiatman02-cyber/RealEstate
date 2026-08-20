@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" width="260" height="80" role="img" aria-label="THE LEDGER (โลโก้ตัวอย่าง)" color="currentColor">
+  <g fill="none"><rect x="14" y="24" width="32" height="32" rx="7" fill="none" stroke="currentColor" stroke-width="3"/><path d="M22 44l8-10 8 10" fill="none" stroke="currentColor" stroke-width="3"/></g>
+  <text x="62" y="42" font-family="Segoe UI, Tahoma, sans-serif" font-weight="600" font-size="21" letter-spacing=".6" fill="currentColor">THE LEDGER</text>
+  <text x="63" y="60" font-family="Segoe UI, Tahoma, sans-serif" font-size="12" letter-spacing="2" fill="currentColor" opacity=".65">MEDIA</text>
+</svg>

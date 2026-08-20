@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Condo Supply 2026">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F1D38"/><stop offset="1" stop-color="#16294B"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060B18" stop-opacity="0"/>
+      <stop offset="1" stop-color="#060B18" stop-opacity=".85"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#FBFAF7" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1320" cy="180" r="230" fill="#C9A227" opacity=".14"/>
+  <circle cx="240" cy="760" r="300" fill="#35C5D8" opacity=".10"/>
+  <g fill="#060B18" opacity=".55"><rect x="0" y="741" width="105" height="159" rx="3"/><rect x="115" y="614" width="101" height="286" rx="3"/><rect x="226" y="754" width="57" height="146" rx="3"/><rect x="293" y="795" width="53" height="105" rx="3"/><rect x="356" y="570" width="98" height="330" rx="3"/><rect x="464" y="670" width="78" height="230" rx="3"/><rect x="552" y="705" width="75" height="195" rx="3"/><rect x="637" y="496" width="55" height="404" rx="3"/><rect x="702" y="634" width="110" height="266" rx="3"/><rect x="822" y="571" width="55" height="329" rx="3"/><rect x="887" y="549" width="58" height="351" rx="3"/><rect x="955" y="522" width="74" height="378" rx="3"/><rect x="1039" y="533" width="68" height="367" rx="3"/><rect x="1117" y="789" width="88" height="111" rx="3"/><rect x="1215" y="703" width="119" height="197" rx="3"/><rect x="1344" y="524" width="54" height="376" rx="3"/><rect x="1408" y="693" width="108" height="207" rx="3"/><rect x="1526" y="582" width="63" height="318" rx="3"/><rect x="1599" y="782" width="87" height="118" rx="3"/></g>
+  <rect width="1600" height="900" fill="url(#fade)"/>
+  <rect x="96" y="700" width="72" height="6" rx="3" fill="#C9A227"/>
+  <text x="96" y="782" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#FBFAF7">Condo Supply 2026</text>
+  <text x="96" y="826" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" fill="#A9B3C7">FiatKopong &#183; Real Estate Intelligence</text>
+</svg>

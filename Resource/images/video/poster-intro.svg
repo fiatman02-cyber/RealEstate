@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Intro &#183; FiatKopong">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060B18"/><stop offset="1" stop-color="#16294B"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060B18" stop-opacity="0"/>
+      <stop offset="1" stop-color="#060B18" stop-opacity=".85"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#FBFAF7" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1320" cy="180" r="230" fill="#C9A227" opacity=".14"/>
+  <circle cx="240" cy="760" r="300" fill="#35C5D8" opacity=".10"/>
+  <g fill="#060B18" opacity=".55"><rect x="0" y="626" width="110" height="274" rx="3"/><rect x="120" y="774" width="67" height="126" rx="3"/><rect x="197" y="791" width="99" height="109" rx="3"/><rect x="306" y="510" width="79" height="390" rx="3"/><rect x="395" y="487" width="70" height="413" rx="3"/><rect x="475" y="802" width="76" height="98" rx="3"/><rect x="561" y="780" width="79" height="120" rx="3"/><rect x="650" y="554" width="76" height="346" rx="3"/><rect x="736" y="567" width="106" height="333" rx="3"/><rect x="852" y="555" width="64" height="345" rx="3"/><rect x="926" y="740" width="80" height="160" rx="3"/><rect x="1016" y="647" width="83" height="253" rx="3"/><rect x="1109" y="602" width="114" height="298" rx="3"/><rect x="1233" y="609" width="114" height="291" rx="3"/><rect x="1357" y="492" width="105" height="408" rx="3"/><rect x="1472" y="734" width="60" height="166" rx="3"/><rect x="1542" y="682" width="108" height="218" rx="3"/></g>
+  <rect width="1600" height="900" fill="url(#fade)"/>
+  <rect x="96" y="700" width="72" height="6" rx="3" fill="#C9A227"/>
+  <text x="96" y="782" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#FBFAF7">Intro &#183; FiatKopong</text>
+  <text x="96" y="826" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" fill="#A9B3C7">FiatKopong &#183; Real Estate Intelligence</text>
+</svg>

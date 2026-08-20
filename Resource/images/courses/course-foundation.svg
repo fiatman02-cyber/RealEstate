@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Foundation Course">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1428"/><stop offset="1" stop-color="#1E3A66"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060B18" stop-opacity="0"/>
+      <stop offset="1" stop-color="#060B18" stop-opacity=".85"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#FBFAF7" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1320" cy="180" r="230" fill="#C9A227" opacity=".14"/>
+  <circle cx="240" cy="760" r="300" fill="#35C5D8" opacity=".10"/>
+  <g fill="#060B18" opacity=".55"><rect x="0" y="524" width="92" height="376" rx="3"/><rect x="102" y="741" width="54" height="159" rx="3"/><rect x="166" y="625" width="101" height="275" rx="3"/><rect x="277" y="706" width="70" height="194" rx="3"/><rect x="357" y="768" width="110" height="132" rx="3"/><rect x="477" y="586" width="118" height="314" rx="3"/><rect x="605" y="536" width="46" height="364" rx="3"/><rect x="661" y="729" width="82" height="171" rx="3"/><rect x="753" y="594" width="108" height="306" rx="3"/><rect x="871" y="659" width="63" height="241" rx="3"/><rect x="944" y="745" width="58" height="155" rx="3"/><rect x="1012" y="547" width="111" height="353" rx="3"/><rect x="1133" y="754" width="55" height="146" rx="3"/><rect x="1198" y="713" width="47" height="187" rx="3"/><rect x="1255" y="561" width="80" height="339" rx="3"/><rect x="1345" y="782" width="87" height="118" rx="3"/><rect x="1442" y="668" width="68" height="232" rx="3"/><rect x="1520" y="688" width="51" height="212" rx="3"/><rect x="1581" y="647" width="66" height="253" rx="3"/></g>
+  <rect width="1600" height="900" fill="url(#fade)"/>
+  <rect x="96" y="700" width="72" height="6" rx="3" fill="#C9A227"/>
+  <text x="96" y="782" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#FBFAF7">Foundation Course</text>
+  <text x="96" y="826" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" fill="#A9B3C7">FiatKopong &#183; Real Estate Intelligence</text>
+</svg>

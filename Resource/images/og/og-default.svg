@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="FiatKopong — Real Estate Intelligence">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F1D38"/><stop offset=".55" stop-color="#0A1428"/><stop offset="1" stop-color="#060B18"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E8CE7A"/><stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0v60" fill="none" stroke="#FBFAF7" stroke-opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1040" cy="120" r="210" fill="#C9A227" opacity=".13"/>
+  <circle cx="130" cy="560" r="200" fill="#35C5D8" opacity=".10"/>
+  <g fill="#060B18" opacity=".45">
+    <rect x="700" y="430" width="70" height="200" rx="4"/><rect x="785" y="360" width="64" height="270" rx="4"/>
+    <rect x="864" y="470" width="80" height="160" rx="4"/><rect x="959" y="330" width="58" height="300" rx="4"/>
+    <rect x="1032" y="440" width="76" height="190" rx="4"/><rect x="1123" y="390" width="60" height="240" rx="4"/>
+  </g>
+  <rect x="80" y="120" width="86" height="6" rx="3" fill="url(#gold)"/>
+  <text x="80" y="230" font-family="Georgia, 'Times New Roman', serif" font-size="74" fill="#FBFAF7">FiatKopong</text>
+  <text x="80" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#C9A227">Real Estate Intelligence</text>
+  <text x="80" y="372" font-family="Segoe UI, Tahoma, sans-serif" font-size="25" fill="#C7CFDD">ข้อมูลอสังหาริมทรัพย์ที่ตรวจสอบซ้ำได้</text>
+  <text x="80" y="412" font-family="Segoe UI, Tahoma, sans-serif" font-size="25" fill="#C7CFDD">คอร์ส &#183; บทวิเคราะห์ &#183; Dashboard &#183; ที่ปรึกษา</text>
+  <text x="80" y="546" font-family="Segoe UI, Tahoma, sans-serif" font-size="21" letter-spacing="2.6" fill="#8A94A8">ก่อพงศ์ ลีเจริญพิสิฐ</text>
+</svg>
