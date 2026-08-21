@@ -130,20 +130,99 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- ============================= SHOWCASE ============================= -->
+  <section class="section" aria-labelledby="show-title">
+    <div class="container">
+      <div class="split">
+        <div>
+          <p class="eyebrow">ตัวอย่างผลงาน</p>
+          <h2 id="show-title" class="mt-3">Dashboard ที่สรุปทุกอย่างให้ในหน้าเดียว</h2>
+          <p class="lead mt-3">
+            แทนการไล่เปิดหลายแอปหรือค้นข่าวเอง ระบบสรุปสถานะพอร์ตของคุณให้ทุกเช้า
+            พร้อมแจ้งเตือนเฉพาะสิ่งที่กระทบกับยูนิตที่คุณถืออยู่จริง
+          </p>
+          <ul class="prose mt-5">
+            <li>ติดตามราคาตลาดของยูนิต/ทำเลที่คุณถืออยู่ อัปเดตทุกสัปดาห์</li>
+            <li>แจ้งเตือนเมื่อมีข่าวหรือแผนพัฒนาที่กระทบทำเลของคุณ</li>
+            <li>สรุปผลตอบแทนค่าเช่าเทียบกับต้นทุนที่แท้จริง</li>
+            <li>ส่งออกรายงานสำหรับยื่นภาษีหรือขอสินเชื่อเพิ่ม</li>
+          </ul>
+        </div>
+        <div class="index-card" data-reveal data-delay="1">
+          <div class="index-card__head">
+            <div>
+              <p class="small muted">มูลค่าพอร์ตรวม (ตัวอย่าง)</p>
+              <p class="index-card__val">฿18.4M</p>
+            </div>
+            <span class="delta delta--up">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+              +6.1% YTD
+            </span>
+          </div>
+          <div class="bars mt-4">
+            <div class="bar bar--cyan"><span class="bar__top"><span>อัตราการเช่า (Occupancy)</span><b>92%</b></span><span class="bar__track"><span class="bar__fill" data-width="92"></span></span></div>
+            <div class="bar bar--green"><span class="bar__top"><span>Yield เฉลี่ยหลังหักค่าใช้จ่าย</span><b>68%</b></span><span class="bar__track"><span class="bar__fill" data-width="68"></span></span></div>
+            <div class="bar"><span class="bar__top"><span>สัดส่วนยูนิตที่ราคาขยับขึ้น</span><b>74%</b></span><span class="bar__track"><span class="bar__fill" data-width="74"></span></span></div>
+          </div>
+          <p class="xs muted mt-4">ภาพตัวอย่างสำหรับสาธิตหน้าตาระบบ ไม่ใช่ข้อมูลลูกค้าจริง</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= HOW IT'S BUILT ============================= -->
+  <section class="section on-light" aria-labelledby="build-title">
+    <div class="container">
+      <div class="sec-head sec-head--center">
+        <p class="eyebrow">ขั้นตอนการทำงาน</p>
+        <h2 id="build-title">จากขอ demo ถึงใช้งานจริง ใช้เวลาไม่นาน</h2>
+      </div>
+      <ol class="timeline" data-reveal style="max-width:720px;margin-inline:auto">
+        <li class="tl-item"><p class="tl-item__year">ขั้นที่ 1</p><h3>คุยความต้องการ 30 นาที</h3><p>ทำความเข้าใจพอร์ตของคุณและสิ่งที่อยากติดตาม</p></li>
+        <li class="tl-item"><p class="tl-item__year">ขั้นที่ 2</p><h3>ออกแบบ Dashboard ตัวอย่าง</h3><p>ส่งแบบร่างให้ดูก่อนเริ่มสร้างจริง</p></li>
+        <li class="tl-item"><p class="tl-item__year">ขั้นที่ 3</p><h3>เชื่อมข้อมูลและทดสอบ</h3><p>ใส่ข้อมูลพอร์ตจริง ทดสอบการแจ้งเตือน</p></li>
+        <li class="tl-item"><p class="tl-item__year">ขั้นที่ 4</p><h3>ส่งมอบและอบรมการใช้งาน</h3><p>สอนใช้งานจนมั่นใจ พร้อมซัพพอร์ตต่อเนื่อง</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================= DEMO REQUEST ============================= -->
+  <section class="section" id="demo" aria-labelledby="demo-title">
     <div class="container container--narrow">
       <div class="panel">
-        <p class="eyebrow">อยู่ในคิวถัดไป</p>
-        <h2 class="mt-3">หน้านี้กำลังจัดทำเนื้อหา</h2>
-        <p class="mt-4 muted">
-          โครงหน้า เมนู ดีไซน์ และระบบทั้งหมดพร้อมแล้ว เหลือเติมเนื้อหาส่วนกลางของหน้านี้
-          — วางเนื้อหาไว้ที่ <code>_partials/body/dashboards.html</code> แล้วรัน
-          <code>bash _partials/build.sh</code> เนื้อหาจะขึ้นแทนกล่องนี้ทันที
-        </p>
-        <div class="cluster mt-6">
-          <a class="btn btn--gold" href="consult.html">จองคำปรึกษาฟรี</a>
-          <a class="btn btn--outline" href="index.html">กลับหน้าแรก</a>
-        </div>
+        <p class="eyebrow">ขอ Demo</p>
+        <h2 id="demo-title" class="mt-3">ดูตัวอย่าง Dashboard ที่ออกแบบสำหรับพอร์ตของคุณ</h2>
+        <p class="lead mt-3">ไม่มีค่าใช้จ่ายในการดู demo — กรอกข้อมูลคร่าวๆ ทีมงานจะติดต่อกลับเพื่อนัดเวลา</p>
+
+        <form class="form mt-6" data-validate data-success-msg="รับคำขอ demo แล้ว ทีมงานจะติดต่อกลับภายใน 1-2 วันทำการ" novalidate>
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="db-name">ชื่อ-นามสกุล <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="db-name" name="name" required autocomplete="name">
+              <span class="err" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="db-email">อีเมล <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="db-email" name="email" required autocomplete="email">
+              <span class="err" role="alert"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="db-units">จำนวนยูนิต/แปลงในพอร์ตปัจจุบัน</label>
+            <select id="db-units" name="units">
+              <option>1–3 ยูนิต</option>
+              <option>4–10 ยูนิต</option>
+              <option>มากกว่า 10 ยูนิต</option>
+              <option>ยังไม่มี กำลังวางแผน</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="db-note">อยากให้ Dashboard ติดตามอะไรเป็นพิเศษ</label>
+            <textarea id="db-note" name="note" placeholder="เช่น อยากติดตามราคาเช่าเทียบตลาด, แจ้งเตือนข่าวรอบทำเล"></textarea>
+          </div>
+          <button class="btn btn--gold btn--lg btn--block" type="submit">ขอ Demo</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </section>

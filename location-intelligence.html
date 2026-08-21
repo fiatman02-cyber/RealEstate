@@ -130,20 +130,138 @@
     </div>
   </section>
 
-  <section class="section">
-    <div class="container container--narrow">
-      <div class="panel">
-        <p class="eyebrow">อยู่ในคิวถัดไป</p>
-        <h2 class="mt-3">หน้านี้กำลังจัดทำเนื้อหา</h2>
-        <p class="mt-4 muted">
-          โครงหน้า เมนู ดีไซน์ และระบบทั้งหมดพร้อมแล้ว เหลือเติมเนื้อหาส่วนกลางของหน้านี้
-          — วางเนื้อหาไว้ที่ <code>_partials/body/location-intelligence.html</code> แล้วรัน
-          <code>bash _partials/build.sh</code> เนื้อหาจะขึ้นแทนกล่องนี้ทันที
-        </p>
-        <div class="cluster mt-6">
-          <a class="btn btn--gold" href="consult.html">จองคำปรึกษาฟรี</a>
-          <a class="btn btn--outline" href="index.html">กลับหน้าแรก</a>
+  <!-- ============================= FULL WIDGET ============================= -->
+  <section class="section section--tight" aria-labelledby="li-full-title">
+    <div class="container">
+      <h2 id="li-full-title" class="sr-only">แผนที่ Location IQ เต็มจอ</h2>
+      <div class="li" data-li data-reveal>
+        <div class="li__map">
+          <svg viewBox="0 0 560 420" role="group" aria-label="แผนที่ผังโซนกรุงเทพฯ และปริมณฑล แบบวาดเชิงสัญลักษณ์">
+            <defs>
+              <linearGradient id="river2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1E3A66"/><stop offset="1" stop-color="#16294B"/>
+              </linearGradient>
+            </defs>
+            <path d="M232 0c-12 60 26 96 6 150s-46 82-30 140 10 90 10 130" fill="none" stroke="url(#river2)" stroke-width="26" opacity=".85"/>
+            <path d="M60 300L300 120l180 40" fill="none" stroke="#35C5D8" stroke-width="2.5" stroke-dasharray="7 7" opacity=".55"/>
+            <path d="M100 90l120 130 200 60" fill="none" stroke="#9A8CF5" stroke-width="2.5" stroke-dasharray="7 7" opacity=".5"/>
+
+            <g class="li__zone" role="button" tabindex="0" aria-pressed="true"
+               data-zone='{"name":"สุขุมวิท ตอนกลาง","grade":"A","note":"ราคาสูงแล้วแต่สภาพคล่องดีที่สุดในตลาด ความเสี่ยงหลักคือซัพพลายคอนโดใหม่ที่ยังทยอยเข้า","metrics":{"price":88,"transit":95,"infra":78,"risk":72,"supply":54}}'>
+              <rect class="zone-shape" x="300" y="150" width="150" height="96" rx="12"/>
+              <text x="315" y="185">สุขุมวิท</text>
+              <text x="315" y="207" font-size="11" opacity=".7">A · 88</text>
+            </g>
+            <g class="li__zone" role="button" tabindex="0" aria-pressed="false"
+               data-zone='{"name":"พหลโยธิน – จตุจักร","grade":"A-","note":"จุดตัดรถไฟฟ้าหลายสายและศูนย์ราชการใหม่ทำให้อุปสงค์เช่ายังแข็ง ราคายังตามหลังสุขุมวิทอยู่พอสมควร","metrics":{"price":74,"transit":92,"infra":86,"risk":68,"supply":61}}'>
+              <rect class="zone-shape" x="290" y="40" width="140" height="92" rx="12"/>
+              <text x="304" y="76">พหลโยธิน</text>
+              <text x="304" y="98" font-size="11" opacity=".7">A- · 82</text>
+            </g>
+            <g class="li__zone" role="button" tabindex="0" aria-pressed="false"
+               data-zone='{"name":"ฝั่งธนบุรี – บางหว้า","grade":"B+","note":"ราคาต่อตารางเมตรยังต่ำกว่าฝั่งพระนครชัดเจน ได้ประโยชน์จากส่วนต่อขยายรถไฟฟ้า แต่ต้องดูพื้นที่น้ำท่วมซ้ำซากเป็นจุด","metrics":{"price":62,"transit":74,"infra":66,"risk":48,"supply":76}}'>
+              <rect class="zone-shape" x="70" y="230" width="140" height="96" rx="12"/>
+              <text x="84" y="268">ฝั่งธนบุรี</text>
+              <text x="84" y="290" font-size="11" opacity=".7">B+ · 71</text>
+            </g>
+            <g class="li__zone" role="button" tabindex="0" aria-pressed="false"
+               data-zone='{"name":"รังสิต – ปทุมธานี","grade":"B","note":"ตลาดบ้านเดี่ยวและทาวน์โฮมสำหรับครอบครัวแรกเข้า ราคาเข้าถึงง่ายที่สุด แลกกับเวลาเดินทางและความเสี่ยงน้ำ","metrics":{"price":54,"transit":58,"infra":63,"risk":41,"supply":83}}'>
+              <rect class="zone-shape" x="330" y="278" width="150" height="96" rx="12"/>
+              <text x="344" y="316">รังสิต</text>
+              <text x="344" y="338" font-size="11" opacity=".7">B · 65</text>
+            </g>
+            <g class="li__zone" role="button" tabindex="0" aria-pressed="false"
+               data-zone='{"name":"EEC – ชลบุรี / ระยอง","grade":"B+","note":"ที่ดินอุตสาหกรรมและที่พักคนทำงานยังมีดีมานด์จริง แต่ราคาที่ดินบางแปลงวิ่งไปก่อนพื้นฐานแล้ว ต้องเลือกทำเลเป็นแปลง","metrics":{"price":69,"transit":52,"infra":81,"risk":57,"supply":70}}'>
+              <rect class="zone-shape" x="80" y="60" width="150" height="96" rx="12"/>
+              <text x="94" y="98">EEC</text>
+              <text x="94" y="120" font-size="11" opacity=".7">B+ · 70</text>
+            </g>
+          </svg>
+          <p class="li__legend mt-4">
+            <span><i style="background:#35C5D8" aria-hidden="true"></i>เส้นทางขนส่งหลัก</span>
+            <span><i style="background:#9A8CF5" aria-hidden="true"></i>แผนพัฒนาในอนาคต</span>
+            <span><i style="background:#1E3A66" aria-hidden="true"></i>แม่น้ำ</span>
+          </p>
         </div>
+        <div class="li__panel">
+          <div class="cluster" style="justify-content:space-between;align-items:start">
+            <div>
+              <p class="eyebrow" style="margin-bottom:.35rem">คะแนนทำเล</p>
+              <p class="li__zonename" data-li-name>สุขุมวิท ตอนกลาง</p>
+            </div>
+            <span class="li__grade" data-li-grade aria-label="เกรดรวมของทำเล">A</span>
+          </div>
+          <div class="bars">
+            <div class="bar" data-li-metric="price"><span class="bar__top"><span>แนวโน้มราคาย้อนหลัง 5 ปี</span><b>0/100</b></span><span class="bar__track"><span class="bar__fill"></span></span></div>
+            <div class="bar bar--cyan" data-li-metric="transit"><span class="bar__top"><span>การเข้าถึงระบบขนส่ง</span><b>0/100</b></span><span class="bar__track"><span class="bar__fill"></span></span></div>
+            <div class="bar bar--cyan" data-li-metric="infra"><span class="bar__top"><span>แผนพัฒนาโครงสร้างพื้นฐาน</span><b>0/100</b></span><span class="bar__track"><span class="bar__fill"></span></span></div>
+            <div class="bar bar--green" data-li-metric="risk"><span class="bar__top"><span>ความปลอดภัยจากความเสี่ยง (น้ำท่วม/ผังเมือง)</span><b>0/100</b></span><span class="bar__track"><span class="bar__fill"></span></span></div>
+            <div class="bar bar--red" data-li-metric="supply"><span class="bar__top"><span>แรงกดดันจากซัพพลายในย่าน</span><b>0/100</b></span><span class="bar__track"><span class="bar__fill"></span></span></div>
+          </div>
+          <p class="small muted" data-li-note>เลือกโซนบนแผนที่เพื่อดูสรุป</p>
+          <p class="li__lock"><strong>เจาะลึกระดับแปลง</strong> — คะแนนรายซอย ประวัติราคาซื้อขายจริง และการคาดการณ์ 3 ปี เปิดให้เฉพาะสมาชิกและลูกค้า Dashboard</p>
+          <div class="cluster">
+            <a class="btn btn--gold btn--sm" href="dashboards.html">ขอ Demo Dashboard</a>
+            <a class="btn btn--outline btn--sm" href="#method">อ่านวิธีคิดคะแนน</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= METHODOLOGY ============================= -->
+  <section class="section on-light" id="method" aria-labelledby="method-title">
+    <div class="container container--narrow">
+      <div class="sec-head">
+        <p class="eyebrow">วิธีคิดคะแนน</p>
+        <h2 id="method-title">5 มิติ ที่ประกอบเป็นคะแนนทำเล</h2>
+        <p>ทุกมิติถ่วงน้ำหนักเท่ากันในเวอร์ชันสาธิตนี้ — เวอร์ชันจริงจะปรับน้ำหนักตามประเภทผู้ใช้ (ซื้ออยู่เองเทียบกับซื้อลงทุน)</p>
+      </div>
+      <div class="grid grid--2">
+        <div class="card card--flat" style="background:var(--paper);border-color:rgba(16,24,40,.1)">
+          <div class="card__body">
+            <span class="badge badge--gold">มิติ 1</span>
+            <h3 class="card__title">แนวโน้มราคาย้อนหลัง 5 ปี</h3>
+            <p class="card__text">คำนวณจากราคาซื้อขายจริงที่จดทะเบียนโอนกรรมสิทธิ์ ไม่ใช่ราคาประกาศขาย</p>
+          </div>
+        </div>
+        <div class="card card--flat" style="background:var(--paper);border-color:rgba(16,24,40,.1)">
+          <div class="card__body">
+            <span class="badge badge--gold">มิติ 2</span>
+            <h3 class="card__title">การเข้าถึงระบบขนส่ง</h3>
+            <p class="card__text">ระยะห่างจากสถานีรถไฟฟ้า/ทางด่วน และความหนาแน่นของเส้นทางในย่าน</p>
+          </div>
+        </div>
+        <div class="card card--flat" style="background:var(--paper);border-color:rgba(16,24,40,.1)">
+          <div class="card__body">
+            <span class="badge badge--gold">มิติ 3</span>
+            <h3 class="card__title">แผนพัฒนาโครงสร้างพื้นฐาน</h3>
+            <p class="card__text">โครงการที่อยู่ระหว่างก่อสร้างหรือได้รับอนุมัติแล้วเท่านั้น ไม่นับข่าวลือหรือแผนเบื้องต้น</p>
+          </div>
+        </div>
+        <div class="card card--flat" style="background:var(--paper);border-color:rgba(16,24,40,.1)">
+          <div class="card__body">
+            <span class="badge badge--gold">มิติ 4</span>
+            <h3 class="card__title">ความเสี่ยง (น้ำท่วม/ผังเมือง)</h3>
+            <p class="card__text">อ้างอิงข้อมูลผังเมืองและพื้นที่เสี่ยงน้ำท่วมซ้ำซากจากหน่วยงานที่เกี่ยวข้อง</p>
+          </div>
+        </div>
+      </div>
+      <blockquote class="prose" style="margin-top:clamp(2rem,4vw,3rem)">
+        ข้อจำกัดที่ต้องบอกตรงๆ: คะแนนนี้ไม่ได้ประเมินสภาพตัวอาคาร คุณภาพการก่อสร้าง หรือนิติบุคคลอาคารชุด
+        — เป็นคะแนนระดับ "ทำเล" เท่านั้น ไม่ใช่คะแนนของยูนิตหรือโครงการเจาะจง
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============================= CTA ============================= -->
+  <section class="section cta-band" aria-labelledby="li-cta-title">
+    <div class="container container--narrow center">
+      <p class="eyebrow center-x">อยากได้คะแนนระดับแปลง</p>
+      <h2 id="li-cta-title" class="mt-3">Location IQ เจาะลึกอยู่ใน Dashboard เฉพาะลูกค้า</h2>
+      <div class="cluster mt-6" style="justify-content:center">
+        <a class="btn btn--gold btn--lg" href="dashboards.html">ขอ Demo Dashboard</a>
+        <a class="btn btn--outline btn--lg" href="consult.html">ปรึกษาทำเลที่สนใจ</a>
       </div>
     </div>
   </section>
