@@ -59,20 +59,20 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .claude/serve.ps1
 ├── about-me.html               เกี่ยวกับผม     ✅ เสร็จ
 ├── 404.html                    หน้าไม่พบ       ✅ เสร็จ
 │
-├── about-us.html               เกี่ยวกับเรา + พาร์ทเนอร์   🟡 มีโครง
-├── products.html               รวมบริการ                  🟡 มีโครง
-├── courses.html                คอร์สเรียน                 🟡 มีโครง
-├── course-detail.html          รายละเอียดคอร์ส            🟡 มีโครง
-├── reports.html                คลังบทวิเคราะห์            🟡 มีโครง
-├── dashboards.html             Dashboard ลูกค้า           🟡 มีโครง
-├── consult.html                จองคำปรึกษา                🟡 มีโครง
-├── location-intelligence.html  Location IQ เต็มจอ         🟡 มีโครง
-├── articles.html               รายการบทความ               🟡 มีโครง
-├── article-detail.html         บทความฉบับเต็ม             🟡 มีโครง
-├── testimonials.html           รีวิวผู้ใช้                🟡 มีโครง
-├── faq.html                    คำถามที่พบบ่อย             🟡 มีโครง
-├── contact.html                ติดต่อ                     🟡 มีโครง
-├── privacy.html / terms.html / accessibility.html         🟡 มีโครง
+├── about-us.html               เกี่ยวกับเรา + พาร์ทเนอร์   ✅ เสร็จ
+├── products.html               รวมบริการ                  ✅ เสร็จ
+├── courses.html                คอร์สเรียน                 ✅ เสร็จ
+├── course-detail.html          รายละเอียดคอร์ส            ✅ เสร็จ
+├── reports.html                คลังบทวิเคราะห์            ✅ เสร็จ
+├── dashboards.html             Dashboard ลูกค้า           ✅ เสร็จ
+├── consult.html                จองคำปรึกษา                ✅ เสร็จ
+├── location-intelligence.html  Location IQ เต็มจอ         ✅ เสร็จ
+├── articles.html               รายการบทความ               ✅ เสร็จ
+├── article-detail.html         บทความฉบับเต็ม             ✅ เสร็จ
+├── testimonials.html           รีวิวผู้ใช้                ✅ เสร็จ
+├── faq.html                    คำถามที่พบบ่อย             ✅ เสร็จ
+├── contact.html                ติดต่อ                     ✅ เสร็จ
+├── privacy.html / terms.html / accessibility.html         ✅ เสร็จ (ให้คน PDPA ตรวจก่อนใช้จริง)
 │
 ├── assets/
 │   ├── css/base.css            สี ฟอนต์ ระยะ ปุ่ม  ← แก้สีทั้งเว็บที่นี่
