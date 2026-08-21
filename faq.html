@@ -130,20 +130,100 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- ============================= FAQ GROUPS ============================= -->
+  <section class="section" aria-labelledby="faq-general-title">
     <div class="container container--narrow">
-      <div class="panel">
-        <p class="eyebrow">อยู่ในคิวถัดไป</p>
-        <h2 class="mt-3">หน้านี้กำลังจัดทำเนื้อหา</h2>
-        <p class="mt-4 muted">
-          โครงหน้า เมนู ดีไซน์ และระบบทั้งหมดพร้อมแล้ว เหลือเติมเนื้อหาส่วนกลางของหน้านี้
-          — วางเนื้อหาไว้ที่ <code>_partials/body/faq.html</code> แล้วรัน
-          <code>bash _partials/build.sh</code> เนื้อหาจะขึ้นแทนกล่องนี้ทันที
-        </p>
-        <div class="cluster mt-6">
-          <a class="btn btn--gold" href="consult.html">จองคำปรึกษาฟรี</a>
-          <a class="btn btn--outline" href="index.html">กลับหน้าแรก</a>
-        </div>
+      <h2 id="faq-general-title">ทั่วไป</h2>
+      <div class="acc mt-5">
+        <details class="acc__item" open>
+          <summary class="acc__q">FiatKopong คือใคร ทำงานร่วมกับใครบ้าง <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>FiatKopong คือชื่อที่ก่อพงศ์ ลีเจริญพิสิฐใช้เผยแพร่งานวิเคราะห์และคอร์สเรียนด้านอสังหาริมทรัพย์ ไม่ใช่บริษัทนายหน้าหรือดีเวลลอปเปอร์ อ่านเพิ่มที่ <a href="about-me.html">เกี่ยวกับผม</a></p></div>
+        </details>
+        <details class="acc__item">
+          <summary class="acc__q">เว็บนี้ให้คำแนะนำการลงทุนเฉพาะบุคคลไหม <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>ไม่ให้ เนื้อหาทั้งหมดจัดทำเพื่อให้ข้อมูลและการศึกษาเท่านั้น ไม่ใช่คำแนะนำการลงทุนเฉพาะบุคคล การตัดสินใจซื้อ ขาย หรือลงทุนควรพิจารณาข้อมูลจากหลายแหล่งประกอบกัน</p></div>
+        </details>
+        <details class="acc__item">
+          <summary class="acc__q">ทำไมต้องเชื่อตัวเลขบนเว็บนี้ <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>ไม่จำเป็นต้องเชื่อทั้งหมด — ทุกบทความและรายงานระบุแหล่งอ้างอิงให้ตรวจย้อนกลับได้เสมอ ถ้าตรวจแล้วพบว่าไม่ตรง แจ้งเราได้ที่หน้า <a href="contact.html">ติดต่อ</a></p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section on-light" aria-labelledby="faq-score-title">
+    <div class="container container--narrow">
+      <h2 id="faq-score-title">Credibility Score คิดอย่างไร</h2>
+      <div class="acc mt-5">
+        <details class="acc__item" open>
+          <summary class="acc__q">ตัวเลขคะแนนความน่าเชื่อถือมาจากไหน <i aria-hidden="true"></i></summary>
+          <div class="acc__a">
+            <p>ให้คะแนนตามลักษณะของแหล่งข้อมูลที่ใช้ในบทความนั้น เรียงจากสูงไปต่ำ:</p>
+            <ul class="prose mt-3">
+              <li><strong>9.0–10:</strong> ข้อมูลปฐมภูมิจากหน่วยงานที่มีหน้าที่เก็บข้อมูลนั้นตรง (เช่น ประกาศราคาประเมินราชการ)</li>
+              <li><strong>7.5–8.9:</strong> ข้อมูลจากหน่วยงานรัฐ/สถาบันวิจัยที่แปรรูปแล้ว</li>
+              <li><strong>6.0–7.4:</strong> ฝ่ายวิจัยเอกชนที่เปิดเผยระเบียบวิธี</li>
+              <li><strong>4.0–5.9:</strong> ข่าวที่อ้างแหล่งแต่ตรวจต้นทางไม่ได้</li>
+              <li><strong>1.0–3.9:</strong> ข่าวประชาสัมพันธ์จากผู้มีส่วนได้เสียโดยตรง</li>
+            </ul>
+          </div>
+        </details>
+        <details class="acc__item">
+          <summary class="acc__q">คะแนนนี้ให้โดยคนหรือระบบอัตโนมัติ <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>ปัจจุบันให้คะแนนโดยทีมงานตามเกณฑ์ข้างต้น ยังไม่ใช่ระบบอัตโนมัติ — เป้าหมายระยะยาวคือทำให้เกณฑ์ตรวจสอบได้ง่ายพอที่จะเปิดให้ผู้อ่านช่วยตรวจทานได้ด้วย</p></div>
+        </details>
+        <details class="acc__item">
+          <summary class="acc__q">ถ้าไม่เห็นด้วยกับคะแนนที่ให้ ทำอย่างไรได้ <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>คอมเมนต์ท้ายบทความนั้นได้เลย หรือส่งข้อมูลเพิ่มเติมผ่านหน้า <a href="contact.html">ติดต่อ</a> — ถ้าข้อมูลใหม่มีน้ำหนักเพียงพอ เราจะปรับคะแนนและระบุวันที่แก้ไข</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-course-title">
+    <div class="container container--narrow">
+      <h2 id="faq-course-title">คอร์สเรียนและรายงาน</h2>
+      <div class="acc mt-5">
+        <details class="acc__item" open>
+          <summary class="acc__q">ไม่มีพื้นฐานด้านการเงินเลย เรียนคอร์สพื้นฐานได้ไหม <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>ได้ คอร์ส "อ่านตลาดอสังหาฯ เป็น" ออกแบบมาให้ไม่ต้องมีพื้นฐานมาก่อน อธิบายทุกศัพท์ตั้งแต่ต้น</p></div>
+        </details>
+        <details class="acc__item">
+          <summary class="acc__q">คืนเงินได้ไหมถ้าเรียนแล้วไม่ตรงกับที่คาดไว้ <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>คืนเงินได้เต็มจำนวนภายใน 7 วันหลังสมัคร หากยังเรียนไปไม่เกินครึ่งคอร์ส</p></div>
+        </details>
+        <details class="acc__item">
+          <summary class="acc__q">รายงานสมาชิกกับรายงานฟรีต่างกันตรงไหน <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>รายงานฟรีให้ภาพรวมระดับตลาด ส่วนรายงานสมาชิกมีข้อมูลระดับแปลง/ยูนิตและไฟล์ Excel ให้วิเคราะห์ต่อเอง ดูรายละเอียดที่หน้า <a href="reports.html">บทวิเคราะห์ &amp; สถิติตลาด</a></p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section on-light" aria-labelledby="faq-article-title">
+    <div class="container container--narrow">
+      <h2 id="faq-article-title">บทความและลิขสิทธิ์</h2>
+      <div class="acc mt-5">
+        <details class="acc__item" open>
+          <summary class="acc__q">บทความบนเว็บนี้ก็อปมาจากข่าวหรือเปล่า <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>ไม่ก็อป — ทุกบทความเขียนสรุปใหม่ด้วยถ้อยคำของทีมงานเอง พร้อมลิงก์กลับไปยังต้นทางเสมอ เพื่อให้คุณตรวจสอบเทียบกับต้นฉบับได้</p></div>
+        </details>
+        <details class="acc__item">
+          <summary class="acc__q">พบว่าบทความละเมิดลิขสิทธิ์ ต้องทำอย่างไร <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>แจ้งผ่านหน้า <a href="contact.html">ติดต่อ</a> ทันที เราจะตอบรับภายใน 24 ชั่วโมงและตรวจสอบก่อนดำเนินการแก้ไข</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= STILL HAVE QUESTIONS ============================= -->
+  <section class="section cta-band" aria-labelledby="faq-cta-title">
+    <div class="container container--narrow center">
+      <p class="eyebrow center-x">ยังหาคำตอบไม่เจอ</p>
+      <h2 id="faq-cta-title" class="mt-3">ถามมาได้เลย ไม่มีคำถามที่เล็กเกินไป</h2>
+      <div class="cluster mt-6" style="justify-content:center">
+        <a class="btn btn--gold btn--lg" href="contact.html">ส่งคำถามมา</a>
+        <a class="btn btn--outline btn--lg" href="consult.html">จองคำปรึกษาฟรี</a>
       </div>
     </div>
   </section>

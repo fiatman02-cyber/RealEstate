@@ -130,20 +130,108 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- ============================= WHAT YOU GET ============================= -->
+  <section class="section section--tight" aria-labelledby="what-title">
+    <div class="container">
+      <div class="grid grid--3">
+        <div class="pillar" data-reveal>
+          <span class="pillar__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+          <h3>ครั้งแรกฟรี 30 นาที</h3>
+          <p>คุยกันก่อนว่าเรื่องของคุณตรงกับสิ่งที่ผมช่วยได้ไหม ไม่มีการขายคอร์สหรือแพ็กเกจในสาย</p>
+        </div>
+        <div class="pillar" data-reveal data-delay="1">
+          <span class="pillar__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg></span>
+          <h3>คำตอบอ้างอิงข้อมูลได้</h3>
+          <p>ทุกคำแนะนำจะบอกที่มาและข้อจำกัด ไม่ใช่ความเห็นส่วนตัวที่ฟังดูมั่นใจเฉยๆ</p>
+        </div>
+        <div class="pillar" data-reveal data-delay="2">
+          <span class="pillar__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <h3>บอกตรงถ้าช่วยไม่ได้</h3>
+          <p>ถ้าเรื่องของคุณไม่ตรงกับสิ่งที่เราถนัด ผมจะบอกตรงๆ และแนะนำทางที่เหมาะกว่าให้</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= WHO IS THIS FOR ============================= -->
+  <section class="section on-light" aria-labelledby="who-title">
+    <div class="container container--narrow">
+      <div class="sec-head sec-head--center">
+        <p class="eyebrow">เหมาะกับใคร</p>
+        <h2 id="who-title">การตัดสินใจที่ควรคุยก่อนลงมือ</h2>
+      </div>
+      <div class="acc">
+        <details class="acc__item" open>
+          <summary class="acc__q">กำลังจะซื้อที่ดินแปลงใหญ่เพื่อพัฒนาโครงการ <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>ช่วยประเมินความเป็นไปได้เบื้องต้น เทียบราคาแปลงกับพื้นฐานจริงของทำเล</p></div>
+        </details>
+        <details class="acc__item">
+          <summary class="acc__q">มีพอร์ตหลายยูนิต อยากวางแผนซื้อเพิ่ม/ขายออก <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>ช่วยดูภาพรวมพอร์ต ระบุยูนิตที่ควรจัดการก่อน และจังหวะตลาดที่เหมาะสม</p></div>
+        </details>
+        <details class="acc__item">
+          <summary class="acc__q">เป็นดีเวลลอปเปอร์ขนาดกลาง ไม่มีทีม analyst <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>ช่วยตั้งกรอบ feasibility study เบื้องต้น ก่อนตัดสินใจจ้างทีมทำเต็มรูปแบบ</p></div>
+        </details>
+        <details class="acc__item">
+          <summary class="acc__q">แค่อยากรู้ราคาห้อง/บ้านหนึ่งหลังว่าแพงไปไหม <i aria-hidden="true"></i></summary>
+          <div class="acc__a"><p>กรณีนี้แนะนำเริ่มที่ <a href="courses.html">คอร์สเรียนอสังหาริมทรัพย์</a> ก่อน จะคุ้มค่ากว่าและได้ทักษะติดตัวไปใช้ได้เรื่อยๆ</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= BOOKING FORM ============================= -->
+  <section class="section" id="booking" aria-labelledby="book-title">
     <div class="container container--narrow">
       <div class="panel">
-        <p class="eyebrow">อยู่ในคิวถัดไป</p>
-        <h2 class="mt-3">หน้านี้กำลังจัดทำเนื้อหา</h2>
-        <p class="mt-4 muted">
-          โครงหน้า เมนู ดีไซน์ และระบบทั้งหมดพร้อมแล้ว เหลือเติมเนื้อหาส่วนกลางของหน้านี้
-          — วางเนื้อหาไว้ที่ <code>_partials/body/consult.html</code> แล้วรัน
-          <code>bash _partials/build.sh</code> เนื้อหาจะขึ้นแทนกล่องนี้ทันที
-        </p>
-        <div class="cluster mt-6">
-          <a class="btn btn--gold" href="consult.html">จองคำปรึกษาฟรี</a>
-          <a class="btn btn--outline" href="index.html">กลับหน้าแรก</a>
-        </div>
+        <p class="eyebrow">จองเวลา</p>
+        <h2 id="book-title" class="mt-3">เลือกวันเวลาที่สะดวก</h2>
+        <p class="lead mt-3">ครั้งแรกฟรี 30 นาที ผ่านวิดีโอคอล — เลือกช่วงเวลาแล้วกรอกข้อมูลด้านล่าง</p>
+
+        <form class="form mt-6" data-validate data-success-msg="จองเวลาเรียบร้อย ทีมงานจะส่งลิงก์นัดหมายไปที่อีเมลของคุณ" novalidate>
+          <div class="field">
+            <label>เลือกช่วงเวลาที่สะดวก (พฤหัสบดีนี้)</label>
+            <div class="slots mt-2" role="group" aria-label="เลือกช่วงเวลานัด">
+              <button class="slot" type="button" aria-pressed="false">09:00</button>
+              <button class="slot" type="button" aria-pressed="false">10:30</button>
+              <button class="slot" type="button" disabled>13:00</button>
+              <button class="slot" type="button" aria-pressed="false">14:30</button>
+              <button class="slot" type="button" aria-pressed="false">16:00</button>
+              <button class="slot" type="button" aria-pressed="false">17:30</button>
+            </div>
+            <input type="hidden" name="slot" value="">
+          </div>
+
+          <div class="form__row form__row--2 mt-4">
+            <div class="field">
+              <label for="cs-name">ชื่อ-นามสกุล <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="cs-name" name="name" required autocomplete="name">
+              <span class="err" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="cs-phone">เบอร์โทร <span class="req" aria-hidden="true">*</span></label>
+              <input type="tel" id="cs-phone" name="phone" required autocomplete="tel">
+              <span class="err" role="alert"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cs-email">อีเมล <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="cs-email" name="email" required autocomplete="email">
+            <span class="err" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="cs-topic">เล่าคร่าวๆ ว่ากำลังตัดสินใจเรื่องอะไร <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="cs-topic" name="topic" required placeholder="เช่น กำลังพิจารณาซื้อที่ดิน 5 ไร่ในอำเภอ... เพื่อทำโครงการ..."></textarea>
+            <span class="err" role="alert"></span>
+          </div>
+          <label class="check">
+            <input type="checkbox" name="consent" required>
+            <span>ยินยอมให้ติดต่อกลับเพื่อยืนยันนัดหมาย และรับทราบ<a href="privacy.html">นโยบายความเป็นส่วนตัว</a></span>
+          </label>
+          <button class="btn btn--gold btn--lg btn--block" type="submit">ยืนยันการจอง</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </section>

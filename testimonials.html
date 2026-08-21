@@ -130,20 +130,149 @@
     </div>
   </section>
 
-  <section class="section">
-    <div class="container container--narrow">
-      <div class="panel">
-        <p class="eyebrow">อยู่ในคิวถัดไป</p>
-        <h2 class="mt-3">หน้านี้กำลังจัดทำเนื้อหา</h2>
-        <p class="mt-4 muted">
-          โครงหน้า เมนู ดีไซน์ และระบบทั้งหมดพร้อมแล้ว เหลือเติมเนื้อหาส่วนกลางของหน้านี้
-          — วางเนื้อหาไว้ที่ <code>_partials/body/testimonials.html</code> แล้วรัน
-          <code>bash _partials/build.sh</code> เนื้อหาจะขึ้นแทนกล่องนี้ทันที
-        </p>
-        <div class="cluster mt-6">
-          <a class="btn btn--gold" href="consult.html">จองคำปรึกษาฟรี</a>
-          <a class="btn btn--outline" href="index.html">กลับหน้าแรก</a>
-        </div>
+  <!-- ============================= TESTIMONIAL GRID ============================= -->
+  <section class="section" aria-labelledby="testi-grid-title">
+    <div class="container">
+      <h2 id="testi-grid-title" class="sr-only">รีวิวทั้งหมด</h2>
+      <div class="grid grid--3">
+
+        <figure class="quote" data-reveal>
+          <div class="stars" role="img" aria-label="ให้คะแนน 5 จาก 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+          </div>
+          <blockquote class="quote__text">
+            เคยดูคอนโดสองห้องในตึกเดียวกัน ราคาต่างกันเกือบล้าน ตอนนั้นไม่รู้จะเชื่อใคร
+            หลังเรียนคอร์สผมกลับไปหาราคาซื้อขายจริงย้อนหลังเองได้ แล้วต่อรองลงมาได้จริง
+          </blockquote>
+          <figcaption class="quote__who">
+            <span class="avatar" aria-hidden="true">ณ</span>
+            <span><b>ณัฐพล ว.</b><span>ผู้ซื้อคอนโดครั้งแรก · กรุงเทพฯ</span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote" data-reveal data-delay="1">
+          <div class="stars" role="img" aria-label="ให้คะแนน 5 จาก 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+          </div>
+          <blockquote class="quote__text">
+            พอร์ตผมมีหกยูนิตกระจายสามจังหวัด เมื่อก่อนต้องไล่อ่านข่าวเอง
+            ตอนนี้ Dashboard สรุปมาให้ทุกเช้า สิ่งที่ประหยัดที่สุดไม่ใช่เงิน แต่เป็นเวลา
+          </blockquote>
+          <figcaption class="quote__who">
+            <span class="avatar" aria-hidden="true">S</span>
+            <span><b>Sasithorn P.</b><span>นักลงทุนอสังหาฯ · นนทบุรี</span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote" data-reveal data-delay="2">
+          <div class="stars" role="img" aria-label="ให้คะแนน 5 จาก 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+          </div>
+          <blockquote class="quote__text">
+            เราเป็นดีเวลลอปเปอร์ขนาดกลาง ไม่มีทีมวิเคราะห์ในองค์กร
+            รายงานความเป็นไปได้ของโปรเจกต์ที่ได้กลับมาช่วยให้บอร์ดเห็นภาพเดียวกันในการประชุมครั้งเดียว
+          </blockquote>
+          <figcaption class="quote__who">
+            <span class="avatar" aria-hidden="true">ก</span>
+            <span><b>กิตติพงษ์ ธ.</b><span>ผู้บริหารโครงการ · ชลบุรี</span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote" data-reveal>
+          <div class="stars" role="img" aria-label="ให้คะแนน 4 จาก 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+          </div>
+          <blockquote class="quote__text">
+            คอร์สข้อมูลสำหรับอสังหาฯ ทำให้ผมเปลี่ยนจากขายตามความรู้สึกเป็นขายด้วยตัวเลข
+            ลูกค้าเชื่อมากขึ้นเยอะ อยากให้มีคอร์สต่อยอดระดับสูงกว่านี้อีก
+          </blockquote>
+          <figcaption class="quote__who">
+            <span class="avatar" aria-hidden="true">ว</span>
+            <span><b>วิภาวี จ.</b><span>นายหน้าอิสระ · ปทุมธานี</span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote" data-reveal data-delay="1">
+          <div class="stars" role="img" aria-label="ให้คะแนน 5 จาก 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+          </div>
+          <blockquote class="quote__text">
+            ปรึกษาก่อนซื้อที่ดิน 5 ไร่ ตอนแรกกลัวเสียเวลาเปล่า แต่ 30 นาทีนั้นทำให้ผมถามคำถามถูกจุด
+            กับดีเวลลอปเปอร์ที่คุยด้วย จนต่อรองราคาลงมาได้
+          </blockquote>
+          <figcaption class="quote__who">
+            <span class="avatar" aria-hidden="true">อ</span>
+            <span><b>อรรถพล ม.</b><span>เจ้าของธุรกิจ · ระยอง</span></span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote" data-reveal data-delay="2">
+          <div class="stars" role="img" aria-label="ให้คะแนน 5 จาก 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>
+          </div>
+          <blockquote class="quote__text">
+            สิ่งที่ชอบที่สุดคือทุกบทความมีลิงก์ต้นทางให้กดตรวจได้เอง ไม่ต้องเชื่อทั้งหมดจากที่เขาเขียน
+            รู้สึกว่าเป็นเว็บที่ให้เกียรติคนอ่าน
+          </blockquote>
+          <figcaption class="quote__who">
+            <span class="avatar" aria-hidden="true">ป</span>
+            <span><b>ปิยะดา ส.</b><span>ผู้อ่านประจำ · เชียงใหม่</span></span>
+          </figcaption>
+        </figure>
+
+      </div>
+      <p class="xs muted mt-6">
+        ข้อความรีวิวในหน้าตัวอย่างนี้เป็นเนื้อหาสาธิตสำหรับจัดหน้า — จะแทนที่ด้วยรีวิวจริงที่ได้รับอนุญาต
+        จากเจ้าของข้อความก่อนเผยแพร่จริง
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================= STATS ============================= -->
+  <section class="section on-light" aria-labelledby="testi-stats-title">
+    <div class="container">
+      <h2 id="testi-stats-title" class="sr-only">สรุปผลลัพธ์</h2>
+      <div class="stats" data-reveal>
+        <div class="stat"><span class="stat__num"><span data-count="4.8" data-decimal="1">0</span></span><span class="stat__label">คะแนนความพึงพอใจเฉลี่ย</span><span class="stat__note">จากแบบประเมินหลังคอร์ส</span></div>
+        <div class="stat"><span class="stat__num"><span data-count="1240" data-suffix="+">0</span></span><span class="stat__label">ผู้เรียนคอร์สสะสม</span><span class="stat__note">ทุกคอร์สรวมกัน</span></div>
+        <div class="stat"><span class="stat__num"><span data-count="96" data-suffix="%">0</span></span><span class="stat__label">แนะนำต่อให้เพื่อน</span><span class="stat__note">จากแบบสำรวจล่าสุด</span></div>
+        <div class="stat"><span class="stat__num"><span data-count="30" data-suffix="+">0</span></span><span class="stat__label">เคสที่ปรึกษาที่ดำเนินไปแล้ว</span><span class="stat__note">ตั้งแต่เปิดบริการ</span></div>
+      </div>
+      <p class="xs muted center mt-4">ตัวเลขในหน้าตัวอย่างนี้เป็นชุดข้อมูลสาธิต — ดู Resource/notes/CONTENT-TO-CONFIRM.md</p>
+    </div>
+  </section>
+
+  <!-- ============================= CTA ============================= -->
+  <section class="section cta-band" aria-labelledby="testi-cta-title">
+    <div class="container container--narrow center">
+      <p class="eyebrow center-x">อยากเป็นเคสถัดไป</p>
+      <h2 id="testi-cta-title" class="mt-3">เริ่มจากจุดที่ตรงกับสถานะของคุณตอนนี้</h2>
+      <div class="cluster mt-6" style="justify-content:center">
+        <a class="btn btn--gold btn--lg" href="courses.html">ดูคอร์สเรียน</a>
+        <a class="btn btn--outline btn--lg" href="consult.html">จองคำปรึกษาฟรี</a>
       </div>
     </div>
   </section>

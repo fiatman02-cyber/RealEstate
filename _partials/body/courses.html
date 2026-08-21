@@ -1,0 +1,124 @@
+  <!-- ============================= COURSE GRID ============================= -->
+  <section class="section" aria-labelledby="grid-title" data-filter-root>
+    <div class="container">
+      <div class="cluster" style="justify-content:space-between;margin-bottom:2rem">
+        <div class="chips">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">ทั้งหมด <span class="chip__count" data-result-count>4</span></button>
+          <button class="chip" type="button" data-filter="beginner" aria-pressed="false">มือใหม่</button>
+          <button class="chip" type="button" data-filter="data" aria-pressed="false">ข้อมูล/วิเคราะห์</button>
+          <button class="chip" type="button" data-filter="investor" aria-pressed="false">นักลงทุน</button>
+          <button class="chip" type="button" data-filter="developer" aria-pressed="false">ดีเวลลอปเปอร์</button>
+        </div>
+        <label class="search">
+          <span class="sr-only">ค้นหาคอร์ส</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="search" data-search placeholder="ค้นหาคอร์ส เช่น ที่ดิน, dashboard, ราคาตลาด">
+        </label>
+      </div>
+
+      <h2 id="grid-title" class="sr-only">รายการคอร์ส</h2>
+      <div class="grid grid--2">
+
+        <article class="card" data-cat="beginner" data-reveal>
+          <div class="card__media">
+            <img src="Resource/images/courses/course-foundation.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="badge badge--free" style="position:absolute;top:.75rem;left:.75rem">เริ่มต้น</span>
+          </div>
+          <div class="card__body">
+            <p class="cluster xs"><span class="mono gold">฿2,900</span><span class="muted">· 6 บท · 4 ชั่วโมง</span></p>
+            <h3 class="card__title"><a href="course-detail.html">อ่านตลาดอสังหาฯ เป็น ก่อนซื้อบ้านหลังแรก</a></h3>
+            <p class="card__text">
+              พื้นฐานที่ทุกคนควรมีก่อนคุยกับนายหน้า — หาราคาซื้อขายจริงย้อนหลัง อ่านประกาศราคาประเมิน
+              และรู้ว่าตัวเลขไหนต่อรองได้จริง
+            </p>
+            <div class="card__foot">
+              <span class="metrics"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg> 1,240 คนเรียน</span></span>
+              <span class="stars" role="img" aria-label="คะแนน 4.8 จาก 5" style="gap:.1rem">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>4.8
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="data" data-reveal data-delay="1">
+          <div class="card__media">
+            <img src="Resource/images/courses/course-data.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="badge badge--new" style="position:absolute;top:.75rem;left:.75rem">ใหม่</span>
+          </div>
+          <div class="card__body">
+            <p class="cluster xs"><span class="mono gold">฿5,900</span><span class="muted">· 9 บท · 7 ชั่วโมง</span></p>
+            <h3 class="card__title"><a href="course-detail.html">ข้อมูลสำหรับอสังหาริมทรัพย์: จากตัวเลขสู่ข้อสรุป</a></h3>
+            <p class="card__text">
+              เรียนวิธีเดียวกับที่ผมใช้ในงานประจำ — ประกอบข้อมูลจากหลายแหล่ง หาความผิดปกติ
+              และสร้างตารางเทียบที่ใช้ตัดสินใจได้จริง เหมาะกับคนที่อยากทำงานนี้เป็นอาชีพ
+            </p>
+            <div class="card__foot">
+              <span class="metrics"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg> 386 คนเรียน</span></span>
+              <span class="stars" role="img" aria-label="คะแนน 4.9 จาก 5" style="gap:.1rem">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>4.9
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="investor" data-reveal data-delay="2">
+          <div class="card__media">
+            <img src="Resource/images/courses/course-investor.svg" alt="" loading="lazy" width="1600" height="900">
+          </div>
+          <div class="card__body">
+            <p class="cluster xs"><span class="mono gold">฿4,500</span><span class="muted">· 8 บท · 6 ชั่วโมง</span></p>
+            <h3 class="card__title"><a href="course-detail.html">คู่มือนักลงทุนพอร์ตหลายยูนิต</a></h3>
+            <p class="card__text">
+              วางระบบติดตามพอร์ตของตัวเอง เข้าใจ yield ที่แท้จริงหลังหักภาระ
+              และรู้จังหวะที่ควรขาย ไม่ใช่แค่ซื้อแล้วรอ
+            </p>
+            <div class="card__foot">
+              <span class="metrics"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg> 512 คนเรียน</span></span>
+              <span class="stars" role="img" aria-label="คะแนน 4.7 จาก 5" style="gap:.1rem">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>4.7
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="developer" data-reveal data-delay="3">
+          <div class="card__media">
+            <img src="Resource/images/courses/course-developer.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="badge badge--member" style="position:absolute;top:.75rem;left:.75rem">ระดับสูง</span>
+          </div>
+          <div class="card__body">
+            <p class="cluster xs"><span class="mono gold">฿12,900</span><span class="muted">· 11 บท · 10 ชั่วโมง</span></p>
+            <h3 class="card__title"><a href="course-detail.html">Feasibility Study สำหรับดีเวลลอปเปอร์ขนาดกลาง</a></h3>
+            <p class="card__text">
+              สำหรับทีมที่ไม่มี analyst ประจำ — วิธีตั้งสมมติฐาน ทดสอบตัวเลขในหลายสถานการณ์
+              และนำเสนอความเสี่ยงให้บอร์ดเห็นภาพเดียวกัน
+            </p>
+            <div class="card__foot">
+              <span class="metrics"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg> 94 คนเรียน</span></span>
+              <span class="stars" role="img" aria-label="คะแนน 5.0 จาก 5" style="gap:.1rem">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l3 6.6 7 .9-5.2 4.8 1.3 7-6.1-3.5L5.9 21l1.3-7L2 9.5l7-.9z"/></svg>5.0
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <p class="panel center mt-6" data-empty hidden>ไม่พบคอร์สที่ตรงกับคำค้นหรือหมวดที่เลือก ลองเปลี่ยนคำค้นดูนะครับ</p>
+    </div>
+  </section>
+
+  <!-- ============================= WHY LEARN ============================= -->
+  <section class="section on-light" aria-labelledby="why-title">
+    <div class="container container--narrow center">
+      <p class="eyebrow center-x">เป้าหมายของทุกคอร์ส</p>
+      <h2 id="why-title" class="mt-3">ให้คุณเลิกต้องพึ่งผม ไม่ใช่ให้กลับมาซื้อคำแนะนำเรื่อยๆ</h2>
+      <p class="lead center-x mt-3" style="max-width:60ch">
+        ทุกคอร์สจบด้วยทักษะที่จับต้องได้ ไม่ใช่แค่ความมั่นใจลอยๆ — ถ้าเรียนจบแล้วยังต้องพึ่งผมทุกครั้ง
+        แปลว่าคอร์สนั้นล้มเหลว
+      </p>
+      <div class="cluster mt-6" style="justify-content:center">
+        <a class="btn btn--gold btn--lg" href="course-detail.html">ดูตัวอย่างคอร์สแรก</a>
+        <a class="btn btn--outline btn--lg" href="faq.html">คำถามที่พบบ่อยเรื่องคอร์ส</a>
+      </div>
+    </div>
+  </section>

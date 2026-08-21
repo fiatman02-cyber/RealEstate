@@ -1,0 +1,146 @@
+  <!-- ============================= ARTICLE GRID ============================= -->
+  <section class="section" aria-labelledby="art-grid-title" data-filter-root>
+    <div class="container">
+      <div class="cluster" style="justify-content:space-between;margin-bottom:2rem">
+        <div class="chips">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">ทั้งหมด <span class="chip__count" data-result-count>6</span></button>
+          <button class="chip" type="button" data-filter="condo" aria-pressed="false">คอนโด</button>
+          <button class="chip" type="button" data-filter="house" aria-pressed="false">บ้านเดี่ยว</button>
+          <button class="chip" type="button" data-filter="land" aria-pressed="false">ที่ดิน</button>
+          <button class="chip" type="button" data-filter="invest" aria-pressed="false">การลงทุน</button>
+        </div>
+        <label class="search">
+          <span class="sr-only">ค้นหาบทความ</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="search" data-search placeholder="ค้นหาบทความ เช่น ดอกเบี้ย, รถไฟฟ้า, ที่ดิน">
+        </label>
+      </div>
+
+      <h2 id="art-grid-title" class="sr-only">รายการบทความ</h2>
+      <div class="grid grid--3">
+
+        <article class="card card--link" data-cat="condo" data-reveal>
+          <div class="card__media">
+            <img src="Resource/images/articles/condo-supply-bangkok.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="score score--high"><span class="score__ring" style="--val:87"><b>8.7</b></span><span class="score__label">น่าเชื่อถือ<span>ข้อมูลจากหน่วยงานรัฐ</span></span></span>
+          </div>
+          <div class="card__body">
+            <p class="cluster xs"><span class="badge">คอนโด</span><span class="muted">20 ส.ค. 2569</span></p>
+            <h3 class="card__title"><a href="article-detail.html">ซัพพลายคอนโดเหลือขายในกรุงเทพฯ ยังกดราคาย่านชานเมือง</a></h3>
+            <p class="card__text">ตัวเลขหน่วยเหลือขายชี้ว่าแรงกดดันไม่กระจายเท่ากันทุกย่าน ทำเลรอบนอกรับภาระหนักกว่าใจกลางเมือง</p>
+            <div class="card__foot">
+              <span class="metrics"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg><span data-views="a1" data-views-base="2418">2,418</span></span>
+                <button class="like-btn" type="button" data-like="a1" data-like-base="184" aria-pressed="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8-4.9-8-10.6A4.6 4.6 0 0112 7.6 4.6 4.6 0 0120 10.4C20 16.1 12 21 12 21z"/></svg><span data-like-count>184</span><span class="sr-only">ถูกใจบทความนี้</span></button></span>
+              <span>อ่าน 6 นาที</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--link" data-cat="invest" data-reveal data-delay="1">
+          <div class="card__media">
+            <img src="Resource/images/articles/interest-rate-housing.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="score score--mid"><span class="score__ring" style="--val:72"><b>7.2</b></span><span class="score__label">น่าเชื่อถือ<span>บทวิเคราะห์ฝ่ายวิจัยเอกชน</span></span></span>
+          </div>
+          <div class="card__body">
+            <p class="cluster xs"><span class="badge">การลงทุน</span><span class="muted">14 ส.ค. 2569</span></p>
+            <h3 class="card__title"><a href="article-detail.html">ดอกเบี้ยกับกำลังซื้อบ้าน: ตัวเลขที่คนซื้อครั้งแรกควรคำนวณเอง</a></h3>
+            <p class="card__text">ส่วนต่างดอกเบี้ยเพียงเล็กน้อยเปลี่ยนวงเงินกู้ที่อนุมัติได้มากกว่าที่หลายคนคิด</p>
+            <div class="card__foot">
+              <span class="metrics"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg><span data-views="a2" data-views-base="1873">1,873</span></span>
+                <button class="like-btn" type="button" data-like="a2" data-like-base="132" aria-pressed="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8-4.9-8-10.6A4.6 4.6 0 0112 7.6 4.6 4.6 0 0120 10.4C20 16.1 12 21 12 21z"/></svg><span data-like-count>132</span><span class="sr-only">ถูกใจบทความนี้</span></button></span>
+              <span>อ่าน 8 นาที</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--link" data-cat="land" data-reveal data-delay="2">
+          <div class="card__media">
+            <img src="Resource/images/articles/land-price-eec.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="score score--high"><span class="score__ring" style="--val:81"><b>8.1</b></span><span class="score__label">น่าเชื่อถือ<span>ประกาศราคาประเมินราชการ</span></span></span>
+          </div>
+          <div class="card__body">
+            <p class="cluster xs"><span class="badge">ที่ดิน</span><span class="muted">7 ส.ค. 2569</span></p>
+            <h3 class="card__title"><a href="article-detail.html">ราคาที่ดินในพื้นที่ EEC: แปลงไหนขึ้นเพราะพื้นฐาน แปลงไหนขึ้นเพราะข่าว</a></h3>
+            <p class="card__text">ไม่ใช่ทุกแปลงที่ราคาขึ้นเพราะมีการพัฒนาจริง เราแยกสองกลุ่มนี้ด้วยการเทียบราคาประเมิน</p>
+            <div class="card__foot">
+              <span class="metrics"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg><span data-views="a3" data-views-base="3106">3,106</span></span>
+                <button class="like-btn" type="button" data-like="a3" data-like-base="241" aria-pressed="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8-4.9-8-10.6A4.6 4.6 0 0112 7.6 4.6 4.6 0 0120 10.4C20 16.1 12 21 12 21z"/></svg><span data-like-count>241</span><span class="sr-only">ถูกใจบทความนี้</span></button></span>
+              <span>อ่าน 7 นาที</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--link" data-cat="house" data-reveal>
+          <div class="card__media">
+            <img src="Resource/images/articles/ltv-first-home.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="score score--mid"><span class="score__ring" style="--val:69"><b>6.9</b></span><span class="score__label">น่าเชื่อถือ<span>ข่าวอ้างเกณฑ์ธนาคารแห่งประเทศไทย</span></span></span>
+          </div>
+          <div class="card__body">
+            <p class="cluster xs"><span class="badge">บ้านเดี่ยว</span><span class="muted">2 ส.ค. 2569</span></p>
+            <h3 class="card__title"><a href="article-detail.html">มาตรการ LTV กระทบผู้ซื้อบ้านหลังแรกแค่ไหนจริงๆ</a></h3>
+            <p class="card__text">แยกผลกระทบตามช่วงราคาบ้าน กลุ่มที่ได้รับผลมากที่สุดอาจไม่ใช่กลุ่มที่สื่อพูดถึง</p>
+            <div class="card__foot">
+              <span class="metrics"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg><span data-views="a4" data-views-base="1502">1,502</span></span>
+                <button class="like-btn" type="button" data-like="a4" data-like-base="97" aria-pressed="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8-4.9-8-10.6A4.6 4.6 0 0112 7.6 4.6 4.6 0 0120 10.4C20 16.1 12 21 12 21z"/></svg><span data-like-count>97</span><span class="sr-only">ถูกใจบทความนี้</span></button></span>
+              <span>อ่าน 5 นาที</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--link" data-cat="condo" data-reveal data-delay="1">
+          <div class="card__media">
+            <img src="Resource/images/articles/mrt-purple-line.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="score score--high"><span class="score__ring" style="--val:84"><b>8.4</b></span><span class="score__label">น่าเชื่อถือ<span>เทียบราคาโอนกรรมสิทธิ์จริง</span></span></span>
+          </div>
+          <div class="card__body">
+            <p class="cluster xs"><span class="badge">คอนโด</span><span class="muted">26 ก.ค. 2569</span></p>
+            <h3 class="card__title"><a href="article-detail.html">รถไฟฟ้าสายสีม่วงเปิดมาสองปี ราคาคอนโดรอบสถานีเป็นอย่างไร</a></h3>
+            <p class="card__text">เทียบราคาก่อน-หลังเปิดใช้งานจริง พบว่าผลต่างชัดที่สุดในระยะ 500 เมตรจากสถานี</p>
+            <div class="card__foot">
+              <span class="metrics"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg><span data-views="a5" data-views-base="2740">2,740</span></span>
+                <button class="like-btn" type="button" data-like="a5" data-like-base="203" aria-pressed="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8-4.9-8-10.6A4.6 4.6 0 0112 7.6 4.6 4.6 0 0120 10.4C20 16.1 12 21 12 21z"/></svg><span data-like-count>203</span><span class="sr-only">ถูกใจบทความนี้</span></button></span>
+              <span>อ่าน 9 นาที</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--link" data-cat="invest" data-reveal data-delay="2">
+          <div class="card__media">
+            <img src="Resource/images/articles/rental-yield-2026.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="score score--mid"><span class="score__ring" style="--val:75"><b>7.5</b></span><span class="score__label">น่าเชื่อถือ<span>คำนวณจากข้อมูลเช่าจริง</span></span></span>
+          </div>
+          <div class="card__body">
+            <p class="cluster xs"><span class="badge">การลงทุน</span><span class="muted">18 ก.ค. 2569</span></p>
+            <h3 class="card__title"><a href="article-detail.html">ผลตอบแทนค่าเช่าเฉลี่ย 2569 แนวรถไฟฟ้าไหนคุ้มที่สุด</a></h3>
+            <p class="card__text">คำนวณ yield จริงหลังหักค่าใช้จ่าย ผลลัพธ์ต่างจากภาพที่คนทั่วไปเข้าใจไม่น้อย</p>
+            <div class="card__foot">
+              <span class="metrics"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg><span data-views="a6" data-views-base="1988">1,988</span></span>
+                <button class="like-btn" type="button" data-like="a6" data-like-base="156" aria-pressed="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8-4.9-8-10.6A4.6 4.6 0 0112 7.6 4.6 4.6 0 0120 10.4C20 16.1 12 21 12 21z"/></svg><span data-like-count>156</span><span class="sr-only">ถูกใจบทความนี้</span></button></span>
+              <span>อ่าน 7 นาที</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <p class="panel center mt-6" data-empty hidden>ไม่พบบทความที่ตรงกับคำค้นหรือหมวดที่เลือก</p>
+    </div>
+  </section>
+
+  <!-- ============================= NEWSLETTER ============================= -->
+  <section class="section cta-band" aria-labelledby="nl-title">
+    <div class="container container--narrow center">
+      <p class="eyebrow center-x">ไม่พลาดบทความใหม่</p>
+      <h2 id="nl-title" class="mt-3">รับอีเมลทุกครั้งที่มีบทความหรือรายงานใหม่</h2>
+      <form class="form mt-6" data-validate data-success-msg="สมัครรับข่าวเรียบร้อย ขอบคุณครับ" novalidate style="max-width:520px;margin-inline:auto">
+        <div class="newsletter__form">
+          <div class="field">
+            <label class="sr-only" for="art-nl-email">อีเมล</label>
+            <input type="email" id="art-nl-email" name="email" required placeholder="อีเมลของคุณ" autocomplete="email">
+            <span class="err" role="alert"></span>
+          </div>
+          <button class="btn btn--gold" type="submit">สมัครรับข่าว</button>
+        </div>
+        <p class="form__status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>

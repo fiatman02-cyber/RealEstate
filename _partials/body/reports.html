@@ -1,0 +1,122 @@
+  <!-- ============================= REPORT GRID ============================= -->
+  <section class="section" aria-labelledby="rep-title" data-filter-root>
+    <div class="container">
+      <div class="cluster" style="justify-content:space-between;margin-bottom:2rem">
+        <div class="chips">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">ทั้งหมด <span class="chip__count" data-result-count>6</span></button>
+          <button class="chip" type="button" data-filter="condo" aria-pressed="false">คอนโด</button>
+          <button class="chip" type="button" data-filter="house" aria-pressed="false">บ้านเดี่ยว</button>
+          <button class="chip" type="button" data-filter="land" aria-pressed="false">ที่ดิน</button>
+          <button class="chip" type="button" data-filter="invest" aria-pressed="false">การลงทุน</button>
+        </div>
+        <label class="search">
+          <span class="sr-only">ค้นหารายงาน</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="search" data-search placeholder="ค้นหารายงาน เช่น ราคา, ดอกเบี้ย, EEC">
+        </label>
+      </div>
+
+      <h2 id="rep-title" class="sr-only">คลังรายงาน</h2>
+      <div class="grid grid--3">
+
+        <article class="card" data-cat="condo" data-reveal>
+          <div class="card__media">
+            <img src="Resource/images/articles/condo-supply-bangkok.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="badge badge--free" style="position:absolute;top:.75rem;left:.75rem">อ่านฟรี</span>
+          </div>
+          <div class="card__body">
+            <p class="xs muted">รายงานประจำเดือน · ส.ค. 2569</p>
+            <h3 class="card__title" style="font-size:1.08rem"><a href="reports.html">ซัพพลายคอนโดเหลือขาย: แยกตามโซนกรุงเทพฯ</a></h3>
+            <p class="card__text">หน่วยเหลือขายที่ทยอยออกมา แยกดูเป็นโซนพบว่าภาระหนักไม่กระจายเท่ากัน</p>
+            <div class="card__foot"><span>18 หน้า</span><span>PDF</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="invest" data-reveal data-delay="1">
+          <div class="card__media">
+            <img src="Resource/images/articles/interest-rate-housing.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="badge badge--member" style="position:absolute;top:.75rem;left:.75rem">สมาชิก</span>
+          </div>
+          <div class="card__body">
+            <p class="xs muted">รายงานประจำเดือน · ส.ค. 2569</p>
+            <h3 class="card__title" style="font-size:1.08rem"><a href="reports.html">ดอกเบี้ยกับกำลังซื้อ: แบบจำลอง 3 สถานการณ์</a></h3>
+            <p class="card__text">ทดสอบผลของส่วนต่างดอกเบี้ยต่อวงเงินกู้ที่อนุมัติได้ พร้อมตารางเทียบ</p>
+            <div class="card__foot"><span>24 หน้า</span><span>PDF + Excel</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="land" data-reveal data-delay="2">
+          <div class="card__media">
+            <img src="Resource/images/articles/land-price-eec.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="badge badge--member" style="position:absolute;top:.75rem;left:.75rem">สมาชิก</span>
+          </div>
+          <div class="card__body">
+            <p class="xs muted">รายงานเจาะพื้นที่ · ก.ค. 2569</p>
+            <h3 class="card__title" style="font-size:1.08rem"><a href="reports.html">ราคาที่ดิน EEC: แปลงไหนขึ้นเพราะพื้นฐาน</a></h3>
+            <p class="card__text">เทียบราคาประเมินกับความคืบหน้าโครงการจริง แยกแปลงที่ราคาวิ่งไปก่อนพื้นฐาน</p>
+            <div class="card__foot"><span>31 หน้า</span><span>PDF</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="house" data-reveal>
+          <div class="card__media">
+            <img src="Resource/images/articles/ltv-first-home.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="badge badge--free" style="position:absolute;top:.75rem;left:.75rem">อ่านฟรี</span>
+          </div>
+          <div class="card__body">
+            <p class="xs muted">รายงานประจำเดือน · ก.ค. 2569</p>
+            <h3 class="card__title" style="font-size:1.08rem"><a href="reports.html">มาตรการ LTV กับผู้ซื้อบ้านหลังแรก</a></h3>
+            <p class="card__text">สรุปผลกระทบของเกณฑ์ LTV ต่อกลุ่มผู้ซื้อบ้านเดี่ยวรอบชานเมือง</p>
+            <div class="card__foot"><span>15 หน้า</span><span>PDF</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="condo" data-reveal data-delay="1">
+          <div class="card__media">
+            <img src="Resource/images/articles/mrt-purple-line.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="badge badge--member" style="position:absolute;top:.75rem;left:.75rem">สมาชิก</span>
+          </div>
+          <div class="card__body">
+            <p class="xs muted">รายงานเจาะพื้นที่ · มิ.ย. 2569</p>
+            <h3 class="card__title" style="font-size:1.08rem"><a href="reports.html">ผลของรถไฟฟ้าสายสีม่วงต่อราคาคอนโดรอบสถานี</a></h3>
+            <p class="card__text">เทียบราคาก่อน-หลังเปิดใช้งานจริง แยกตามระยะห่างจากสถานี</p>
+            <div class="card__foot"><span>22 หน้า</span><span>PDF</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="invest" data-reveal data-delay="2">
+          <div class="card__media">
+            <img src="Resource/images/articles/rental-yield-2026.svg" alt="" loading="lazy" width="1600" height="900">
+            <span class="badge badge--free" style="position:absolute;top:.75rem;left:.75rem">อ่านฟรี</span>
+          </div>
+          <div class="card__body">
+            <p class="xs muted">รายงานประจำเดือน · มิ.ย. 2569</p>
+            <h3 class="card__title" style="font-size:1.08rem"><a href="reports.html">ผลตอบแทนค่าเช่าเฉลี่ย 2569: แยกตามแนวรถไฟฟ้า</a></h3>
+            <p class="card__text">คำนวณ yield จริงหลังหักค่าใช้จ่าย เทียบกันทุกแนวเส้นทางหลัก</p>
+            <div class="card__foot"><span>19 หน้า</span><span>PDF + Excel</span></div>
+          </div>
+        </article>
+
+      </div>
+      <p class="panel center mt-6" data-empty hidden>ไม่พบรายงานที่ตรงกับคำค้นหรือหมวดที่เลือก</p>
+    </div>
+  </section>
+
+  <!-- ============================= MEMBERSHIP ============================= -->
+  <section class="section on-light" aria-labelledby="mem-title">
+    <div class="container container--narrow">
+      <div class="panel panel--gold center">
+        <p class="eyebrow center-x">อ่านฟรี vs สมาชิก</p>
+        <h2 id="mem-title" class="mt-3">รายงานฟรีให้ภาพรวม รายงานสมาชิกเจาะรายละเอียด</h2>
+        <p class="lead center-x mt-3" style="max-width:60ch">
+          รายงานที่มีป้าย <span class="badge badge--free">อ่านฟรี</span> เปิดให้ทุกคนอ่านได้เต็มฉบับ
+          ส่วนป้าย <span class="badge badge--member">สมาชิก</span> จะมีข้อมูลระดับแปลง/ยูนิต และไฟล์ Excel
+          ให้ดาวน์โหลดไปวิเคราะห์ต่อเอง
+        </p>
+        <div class="cluster mt-6" style="justify-content:center">
+          <a class="btn btn--gold btn--lg" href="contact.html">สมัครสมาชิกรายงาน</a>
+          <a class="btn btn--outline btn--lg" href="consult.html">ปรึกษาก่อนสมัคร</a>
+        </div>
+      </div>
+    </div>
+  </section>
